@@ -31,5 +31,17 @@
     // 본문 링크 해시(#) 스크롤 방지
     document.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); }); });
     if(typeof AOS!=='undefined') AOS.refresh();
+    // 서브 수치 카운트업 (원본 홈 countUp 방식: 화면에 들어오면 2/3 지점부터)
+    var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2'));
+    if(cnt.length && 'IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){ es.forEach(function(en){ if(!en.isIntersecting) return; io.unobserve(en.target);
+        var el=en.target, m=el.textContent.match(/^([0-9,]+)(.*)$/); if(!m) return;
+        var to=+m[1].replace(/,/g,''), from=Math.round(to*2/3), t0=null, sfx=m[2];
+        (function step(ts){ t0=t0||ts; var k=Math.min((ts-t0)/1200,1), v=Math.round(from+(to-from)*(1-Math.pow(1-k,3)));
+          el.textContent=v.toLocaleString('en-US')+sfx; if(k<1) requestAnimationFrame(step); })(performance.now());
+      }); },{threshold:.6});
+      cnt.forEach(function(c){ io.observe(c); });
+    }
+    $('a[data-toggle="tab"]').on('shown.bs.tab',function(){ if(typeof AOS!=='undefined') AOS.refreshHard(); });
   });
 })(jQuery);
