@@ -33,7 +33,7 @@
     // 교육목표: 세로 스크롤에 따라 카드 가로 이동
     document.querySelectorAll('.v3-goal').forEach(function(s){ var l=s.querySelector('.v3-goal-list'), hd=s.querySelector('.v3-goal-head');
       function upd(){ var r=s.getBoundingClientRect(), tot=Math.max(1,s.offsetHeight-innerHeight), p=Math.min(1,Math.max(0,-r.top/tot));
-        var m=hd.getBoundingClientRect().left+parseFloat(getComputedStyle(hd).paddingLeft), st=innerWidth*(innerWidth<768?0.9:0.6), en=Math.min(m, innerWidth-m-(l.lastElementChild.offsetLeft+l.lastElementChild.offsetWidth));
+        var cs=getComputedStyle(hd), m=hd.getBoundingClientRect().left+parseFloat(cs.paddingLeft), cw=hd.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight); if(innerWidth>=992){ var gp=parseFloat(getComputedStyle(l).columnGap)||24; l.style.setProperty('--gw',((cw-gp*(l.children.length-1))/l.children.length)+'px'); } else l.style.removeProperty('--gw'); var  st=innerWidth*(innerWidth<768?0.9:0.6), en=Math.min(m, innerWidth-m-(l.lastElementChild.offsetLeft+l.lastElementChild.offsetWidth));
         l.style.transform='translateX('+(st+(en-st)*p)+'px)'; }
       addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd(); });
     if(typeof AOS!=='undefined') AOS.refresh();
