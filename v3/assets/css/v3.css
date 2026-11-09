@@ -350,6 +350,8 @@ footer.ft{background:#fff!important}
 .contents>.sc.v3-csec>section.contain{padding-top:0;padding-bottom:0}
 .contents>.sc.v3-csec+.sc{margin-top:0!important;padding-top:120px;border-top:1px solid #eee}
 @media(max-width:767.98px){.contents>.sc.v3-csec{padding:64px 0}.contents>.sc.v3-csec+.sc{padding-top:64px}}
+.heart.intro .greetings .ceo-img{border-radius:20px!important;overflow:hidden;height:auto!important;line-height:0}
+.heart.intro .greetings .ceo-img img{border-radius:20px!important;display:block}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
