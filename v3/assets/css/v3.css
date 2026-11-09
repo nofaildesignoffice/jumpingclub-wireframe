@@ -175,7 +175,7 @@ header.hd .hd-top .v3-matjip img{border-radius:6px}
 .index .newsletter .form-input input{flex:1;min-width:0;padding:14px 22px;color:#fff}
 @media(max-width:995.98px){.index .newsletter{height:auto}.index .newsletter>.contain{display:block;padding-top:80px}.index .newsletter .text-center{min-width:0;margin-bottom:20px;padding:28px}.index .newsletter .form-input{flex-wrap:wrap}.index .newsletter .form-input input{flex:1 1 100%}.index .newsletter .form-wrap{padding:24px}}
 .ct .top-visual.sub{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;position:relative}
-.ct .top-visual.sub::before{content:'';position:absolute;inset:0;background:rgba(22,48,79,.58);pointer-events:none}
+.ct .top-visual.sub::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.5);pointer-events:none}
 .ct .top-visual.sub .contain{position:relative;z-index:1}
 @media(max-width:995.98px){.index section.sect2{min-height:0!important}.index section.sect2 .contents{height:auto!important;padding-bottom:64px}.index section.sect2 .spacing{display:none}
 .index .newsletter .text-center{height:auto!important;padding:28px!important;margin-top:0!important;position:static!important}}
