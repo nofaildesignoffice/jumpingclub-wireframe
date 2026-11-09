@@ -296,3 +296,8 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 .board-search.v3-has-sel{display:flex;align-items:center;gap:8px}
 .v3-bsel{height:48px;padding:0 36px 0 16px;border:1px solid #ddd;border-radius:24px;background:#fff;font-size:15px;color:#333;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23376CB2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px}
 .board-detail-top .v3-back{display:inline-flex;align-items:center;gap:8px;color:#333;font-weight:500}
+
+/* S2 하늘 → 건물 사진 연결: 같은 단색으로 페이드해 이음매 제거 */
+.index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5) 55%,rgba(91,135,195,.92) 82%,#5B87C3 100%),url(../gen/sky.jpg) center top/cover no-repeat,#5B87C3!important}
+.index .v3-s2p{position:relative;margin-top:-1px;background:url(../photos/92341f.jpg) center/cover no-repeat,#5B87C3}
+.index .v3-s2p::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#5B87C3 0,#5B87C3 6%,rgba(91,135,195,.85) 20%,rgba(91,135,195,.45) 42%,rgba(91,135,195,.12) 65%,rgba(91,135,195,0) 85%)}
