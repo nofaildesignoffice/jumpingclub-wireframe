@@ -301,3 +301,7 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 .index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5) 55%,rgba(91,135,195,.92) 82%,#5B87C3 100%),url(../gen/sky.jpg) center top/cover no-repeat,#5B87C3!important}
 .index .v3-s2p{position:relative;margin-top:-1px;background:url(../photos/92341f.jpg) center/cover no-repeat,#5B87C3}
 .index .v3-s2p::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#5B87C3 0,#5B87C3 6%,rgba(91,135,195,.85) 20%,rgba(91,135,195,.45) 42%,rgba(91,135,195,.12) 65%,rgba(91,135,195,0) 85%)}
+
+/* 일정·공고: 라벨을 제목 위로, 간격 확보 */
+.index .v3-bbs .bbs-list .v3-tag{display:table;margin:0 0 14px;vertical-align:0}
+.index section.v3-bbs .bbs-list li a p.date{margin-top:16px!important;line-height:1.4}
