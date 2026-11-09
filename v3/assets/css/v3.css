@@ -235,13 +235,8 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 .heart.intro .history-progress .nav a{white-space:nowrap;flex-shrink:0}
 
 /* 인사말: 원본처럼 본문 가변폭 + 사진 우측 고정 */
-.heart.intro .greetings>section:first-child .h2+.d-flex>div:first-child{flex:1 1 auto;min-width:0;align-self:center}
+.heart.intro .greetings>section:first-child .h2+.d-flex>div:first-child{flex:1 1 auto;min-width:0}
 .heart.intro .greetings .ceo-img{flex:0 0 auto;overflow:hidden;border-radius:20px;background:none}
 .heart.intro .greetings .ceo-img img{display:block;width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;object-position:50% 20%}
-.heart.intro .greetings .v3-dots{display:grid;grid-template-columns:1fr;gap:10px;margin:0;padding:0}
-.heart.intro .greetings .v3-dots li{margin:0;padding:18px 20px 18px 40px;background:#F3F7FC;border-radius:14px;font-size:15px;line-height:1.5;color:#333;background-position:20px 50%}
-.heart.intro .greetings .v3-dots li::before{left:20px!important;top:50%!important;transform:translateY(-50%)}
-@media(min-width:992px){.heart.intro .greetings .v3-dots{grid-template-columns:1fr 1fr;gap:14px}.heart.intro .greetings .v3-dots li{padding:26px 24px 26px 44px;font-size:16px}.heart.intro .greetings .v3-dots li::before{left:24px!important}
-.heart.intro .greetings>section:first-child .h2+.d-flex>div:first-child .h4{font-size:26px;line-height:1.45}}
 @media(min-width:768px){.heart.intro .greetings .ceo-img{width:360px}}
 @media(max-width:767.98px){.heart.intro .greetings .ceo-img{width:100%;max-width:320px;margin:24px auto 0}}
