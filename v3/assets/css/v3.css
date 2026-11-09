@@ -305,3 +305,5 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 /* 일정·공고: 라벨을 제목 위로, 간격 확보 */
 .index .v3-bbs .bbs-list .v3-tag{display:table;margin:0 0 14px;vertical-align:0}
 .index section.v3-bbs .bbs-list li a p.date{margin-top:16px!important;line-height:1.4}
+
+.index section.sect5.v3-bbs{background:#fff!important}
