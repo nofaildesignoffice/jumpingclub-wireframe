@@ -307,3 +307,6 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 .index section.v3-bbs .bbs-list li a p.date{margin-top:16px!important;line-height:1.4}
 
 .index section.sect5.v3-bbs{background:#fff!important}
+
+.v3-ilist strong{padding-top:0}
+footer.ft{background:#fff!important}
