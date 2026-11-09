@@ -316,6 +316,7 @@ footer.ft{background:#fff!important}
 /* 소개 페이지: 히어로 제외 배경 흰색 */
 .ct:has(.heart.intro .greetings) .contents .box.bg-primary-bg,.ct:has(.heart.intro .greetings) .sect3-list .col-lg-4>div,.ct:has(.heart.intro .greetings) .sect5Swiper .swiper-slide>a{background:#fff!important;border:1px solid #e5e5e5}
 .ct:has(.heart.intro .greetings) .sub-menu,.ct:has(.heart.intro .greetings) .sub-menu.is-sticky{box-shadow:none!important;border-bottom:1px solid #eee}
+.v3-goal-pin{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' fill='none' stroke='%23ffffff' stroke-opacity='.85' stroke-width='1.2'%3E%3Cpath d='M400 720C170 550 50 430 50 280 50 160 145 75 260 75c60 0 110 30 140 80 30-50 80-80 140-80 115 0 210 85 210 205 0 150-120 270-350 440z'/%3E%3C/svg%3E") 58% 10%/min(1200px,110vw) auto no-repeat,radial-gradient(ellipse 75% 95% at 52% 100%,#C6D9F2 0,#D8E6F7 35%,rgba(232,240,250,.75) 62%,rgba(255,255,255,0) 90%),#fff}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
