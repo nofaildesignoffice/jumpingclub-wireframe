@@ -30,6 +30,12 @@
     document.querySelectorAll('.v3-hist').forEach(function(h){ var a=[].slice.call(h.querySelectorAll('.nav a')),it=[].slice.call(h.querySelectorAll('.cont-item')),bar=h.querySelector('.bar'); var on=document.createElement('span'); on.className='progress-on'; bar.appendChild(on); function top(){ var hd=document.querySelector('header.hd'); return (hd?hd.offsetHeight:100)+64+(h.querySelector('.history-progress').offsetHeight); } a.forEach(function(x,i){ x.addEventListener('click',function(e){ e.preventDefault(); window.scrollTo({top:it[i].getBoundingClientRect().top+scrollY-top(),behavior:'smooth'}); }); }); function upd(){ var i=0,t=top()+4; it.forEach(function(el,k){ if(el.getBoundingClientRect().top<=t) i=k; }); a.forEach(function(y,k){ y.classList.toggle('on',k===i); }); var w=h.querySelector('.history-wrap-area').getBoundingClientRect(); var r=Math.max(0,Math.min(1,(t-w.top)/Math.max(1,w.height-innerHeight/2))); on.style.width=(r*100)+'%'; } addEventListener('scroll',upd,{passive:true}); upd(); });
     // 본문 링크 해시(#) 스크롤 방지
     document.querySelectorAll('a[href="#"]').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); }); });
+    // 교육목표: 세로 스크롤에 따라 카드 가로 이동
+    document.querySelectorAll('.v3-goal').forEach(function(s){ var l=s.querySelector('.v3-goal-list'), hd=s.querySelector('.v3-goal-head');
+      function upd(){ var r=s.getBoundingClientRect(), tot=Math.max(1,s.offsetHeight-innerHeight), p=Math.min(1,Math.max(0,-r.top/tot));
+        var m=hd.getBoundingClientRect().left+parseFloat(getComputedStyle(hd).paddingLeft), st=innerWidth*(innerWidth<768?0.9:0.6), en=Math.min(m, innerWidth-m-(l.lastElementChild.offsetLeft+l.lastElementChild.offsetWidth));
+        l.style.transform='translateX('+(st+(en-st)*p)+'px)'; }
+      addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd(); });
     if(typeof AOS!=='undefined') AOS.refresh();
     // 서브 수치 카운트업 (원본 홈 countUp 방식: 화면에 들어오면 2/3 지점부터)
     var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2'));
