@@ -342,6 +342,14 @@ footer.ft{background:#fff!important}
 .v3-hcard-btn{display:inline-flex!important;align-items:center;gap:10px;width:auto!important;min-width:200px;justify-content:center;padding:0 32px!important;background:#fff!important;color:var(--primary)!important;border-color:#fff!important}
 .v3-hcard-btn .icon-inquiry{filter:none}
 @media(max-width:767.98px){.ct .head-bg-box.v3-hcard{height:auto;min-height:320px}}
+/* 교육목표 → 방송 영상: 배경 이어짐 */
+.contents>.sc.v3-gsec+.sc{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' fill='none' stroke='%23ffffff' stroke-opacity='.85' stroke-width='1.2'%3E%3Cpath d='M400 720C170 550 50 430 50 280 50 160 145 75 260 75c60 0 110 30 140 80 30-50 80-80 140-80 115 0 210 85 210 205 0 150-120 270-350 440z'/%3E%3C/svg%3E") 58% calc((100vh - min(1200px,110vw)) * .1 - 100vh)/min(1200px,110vw) auto no-repeat,radial-gradient(ellipse 75% 700px at 52% 0,#C6D9F2 0,#D8E6F7 35%,rgba(232,240,250,.75) 62%,rgba(255,255,255,0) 90%),linear-gradient(180deg,#F4F8FD 0,#F4F8FD 30%,#fff 85%)}
+.contents>.sc.v3-gsec+.sc section.sect5{background:transparent!important}
+.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide>a{background:#fff!important}
+.contents>.sc.v3-csec{margin-top:0!important;padding:120px 0;background:#fff;border-top:1px solid #eee}
+.contents>.sc.v3-csec>section.contain{padding-top:0;padding-bottom:0}
+.contents>.sc.v3-csec+.sc{margin-top:0!important;padding-top:120px;border-top:1px solid #eee}
+@media(max-width:767.98px){.contents>.sc.v3-csec{padding:64px 0}.contents>.sc.v3-csec+.sc{padding-top:64px}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
