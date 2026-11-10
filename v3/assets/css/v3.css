@@ -401,6 +401,7 @@ footer.ft{background:#fff!important}
 .contents>.v3-sec section.oversea .oversea-cont{margin-top:48px!important}
 .v3-hcard-eb{display:block;font-size:18px;font-weight:500;letter-spacing:.02em;margin-bottom:10px;opacity:.9}
 .v3-hcard dd.h5:first-child{margin-top:0}
+.ct .head-bg-box.v3-hcard dd.h5{max-width:760px;word-break:keep-all}
 /* GNB: 메뉴별 하위메뉴 드롭다운 (PC) */
 @media(min-width:996px){
 #gnb>ul>li{position:relative}
