@@ -37,6 +37,14 @@
         l.style.transform='translateX('+(st+(en-st)*p)+'px)'; }
       addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd(); });
     if(window.jQuery){ jQuery(function(){ jQuery('#gnb li').off('mouseover'); jQuery('#gnb ul li a').off('focus'); }); }
+    document.querySelectorAll('.v3-dsel').forEach(function(d){
+      var b=d.querySelector('.v3-dsel-btn');
+      b.addEventListener('click',function(e){e.stopPropagation();var o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+      d.querySelectorAll('li').forEach(function(li){li.addEventListener('click',function(){
+        d.querySelectorAll('li').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});
+        li.classList.add('on');li.setAttribute('aria-selected','true');b.querySelector('span').textContent=li.textContent;d.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+    });
+    document.addEventListener('click',function(){document.querySelectorAll('.v3-dsel.open').forEach(function(d){d.classList.remove('open')})});
     if(typeof AOS!=='undefined') AOS.refresh();
     // 서브 수치 카운트업 (원본 홈 countUp 방식: 화면에 들어오면 2/3 지점부터)
     var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2'));

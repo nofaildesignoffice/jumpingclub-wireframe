@@ -417,6 +417,17 @@ header.hd .hd-top #gnb ul.v3-dd a{border:0!important;text-shadow:none!important;
 header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 #gnb .v3-dd a::before,#gnb .v3-dd a::after{display:none!important}
 }
+/* 게시판 검색 조건 커스텀 드롭다운 */
+.v3-dsel{position:relative;flex:0 0 auto}
+.v3-dsel-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;height:44px;min-width:104px;padding:0 16px 0 20px;border:1px solid #ddd;border-radius:22px;background:#fff;font-size:15px;font-weight:500;color:#333;cursor:pointer;transition:border-color .2s}
+.v3-dsel-btn::after{content:'';width:8px;height:8px;border-right:2px solid #376CB2;border-bottom:2px solid #376CB2;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.v3-dsel.open .v3-dsel-btn{border-color:#376CB2}
+.v3-dsel.open .v3-dsel-btn::after{transform:translateY(2px) rotate(-135deg)}
+.v3-dsel-list{position:absolute;top:calc(100% + 8px);left:0;min-width:100%;margin:0;padding:8px;list-style:none;background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:20}
+.v3-dsel.open .v3-dsel-list{opacity:1;visibility:visible;transform:none}
+.v3-dsel-list li{padding:9px 14px;border-radius:8px;font-size:15px;color:#333;cursor:pointer;white-space:nowrap}
+.v3-dsel-list li:hover{background:#F4F8FD;color:#376CB2}
+.v3-dsel-list li.on{color:#376CB2;font-weight:600}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
