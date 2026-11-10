@@ -387,13 +387,13 @@ footer.ft{background:#fff!important}
 @media(max-width:767.98px){.contents .v3-st{font-size:28px!important}.contents .v3-sd{font-size:16px!important}}
 .contents>.v3-sec>.sc{background:transparent}
 /* 소개: 방송 영상 카드 = 협회활동 게시판 카드 스타일 */
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide>a{display:block;background:#EEF3FA!important;border:0!important;border-radius:20px!important;overflow:hidden;box-shadow:none!important}
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .img{border-radius:20px!important;margin:0}
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .link{padding:24px 32px 32px!important;background:transparent!important}
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .link p{font-size:16px!important;font-weight:400!important;color:#666!important;line-height:24px!important;margin:0}
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .link p.h5{font-size:18px!important;font-weight:700!important;color:#333!important;line-height:1.4!important}
-.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .link p.text-primary{color:var(--primary)!important;font-weight:700!important;margin-top:8px!important}
-@media(max-width:767.98px){.contents>.sc.v3-gsec+.sc .sect5Swiper .swiper-slide .link{padding:20px 24px 24px!important}}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide>a{display:block;background:#EEF3FA!important;border:0!important;border-radius:20px!important;overflow:hidden;box-shadow:none!important}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .img{border-radius:20px!important;margin:0}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .link{padding:24px 32px 32px!important;background:transparent!important}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .link p{font-size:16px!important;font-weight:400!important;color:#666!important;line-height:24px!important;margin:0}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .link p.h5{font-size:18px!important;font-weight:700!important;color:#333!important;line-height:1.4!important}
+:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .link p.text-primary{color:var(--primary)!important;font-weight:700!important;margin-top:8px!important}
+@media(max-width:767.98px){:is(.contents>.sc.v3-gsec+.sc,.v3-gcards) .sect5Swiper .swiper-slide .link{padding:20px 24px 24px!important}}
 /* 배경색 있는 섹션: 배경을 섹션 전체(여백 포함)로 */
 .contents>.v3-sec:has(section.oversea){background:#EEF3FA}
 .contents>.v3-sec:has(section.profile){background:#F6F6F6}
@@ -433,6 +433,21 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 .member.v3-award .v3-a4{flex:0 0 auto!important}
 .member.v3-award .v3-a4{display:block;width:100%;padding:0!important;aspect-ratio:210/297;margin:0 0 20px;border-radius:14px;overflow:hidden;background:#f2f2f2}
 .member.v3-award .v3-a4 img{width:100%;height:100%;object-fit:cover;display:block}
+/* 정점핑클럽 수상 내역 리스트 */
+.v3-awl{list-style:none;margin:0;padding:0}
+.v3-awl li{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #e5e5e5;font-size:18px;font-weight:500;color:#333}
+.v3-awl li:first-child{padding-top:0}
+.v3-awl-ic{flex:0 0 auto;width:22px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23376CB2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='6'/%3E%3Cpath d='M15.477 12.89 17 22l-5-3-5 3 1.523-9.11'/%3E%3C/svg%3E") center/contain no-repeat}
+/* 급수 체계: 좌 제목 + 우 단계 박스 */
+.v3-lvl .v3-lvl-desc{font-size:18px;line-height:1.7;word-break:keep-all;color:#555}
+.v3-lvl-box{padding:32px 36px!important;border-radius:20px}
+.v3-lvl-box+.v3-lvl-box{margin-top:20px}
+.v3-lvl-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.v3-lvl-chips li{padding:6px 16px;border-radius:20px;background:#fff;border:1px solid #d6e2f2;font-size:15px;font-weight:500;color:#376CB2}
+.v3-lvl-out{padding:16px 20px!important;border-radius:14px}
+@media(max-width:767.98px){.v3-lvl-box{padding:24px 20px!important}}
+.v3-gcards .sect5Swiper .swiper-slide .img{position:relative;padding-top:0!important;height:auto!important;aspect-ratio:3/4;background:#fff}
+.v3-gcards .sect5Swiper .swiper-slide .img img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:contain!important;transform:none!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
