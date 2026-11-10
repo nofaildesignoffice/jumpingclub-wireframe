@@ -399,6 +399,23 @@ footer.ft{background:#fff!important}
 .contents>.v3-sec:has(section.profile){background:#F6F6F6}
 .contents>.v3-sec section.oversea,.contents>.v3-sec section.profile{background:transparent!important}
 .contents>.v3-sec section.oversea .oversea-cont{margin-top:48px!important}
+.v3-hcard-eb{display:block;font-size:18px;font-weight:500;letter-spacing:.02em;margin-bottom:10px;opacity:.9}
+.v3-hcard dd.h5:first-child{margin-top:0}
+/* GNB: 메뉴별 하위메뉴 드롭다운 (PC) */
+@media(min-width:996px){
+#gnb>ul>li{position:relative}
+#gnb .v3-dd{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);min-width:170px;margin:0;padding:10px 0;list-style:none;background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.12);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:100}
+#gnb .v3-dd::before{content:'';position:absolute;left:0;right:0;top:-16px;height:16px}
+#gnb>ul>li:hover .v3-dd,#gnb>ul>li:focus-within .v3-dd{opacity:1;visibility:visible;transform:translate(-50%,0)}
+#gnb .v3-dd li{display:block;padding:0;margin:0}
+#gnb .v3-dd a{display:block;padding:9px 22px;font-size:15px;font-weight:500;color:#333!important;white-space:nowrap;text-align:center;line-height:1.5}
+#gnb .v3-dd a:hover{color:var(--primary)!important;background:#F4F8FD}
+header.hd .hd-top #gnb ul.v3-dd{display:block!important}
+header.hd .hd-top #gnb ul.v3-dd li{margin:0!important;display:block}
+header.hd .hd-top #gnb ul.v3-dd a{border:0!important;text-shadow:none!important;color:#333!important;font-weight:500;font-size:15px;padding:10px 24px}
+header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
+#gnb .v3-dd a::before,#gnb .v3-dd a::after{display:none!important}
+}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}

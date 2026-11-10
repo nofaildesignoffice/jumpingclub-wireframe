@@ -36,6 +36,7 @@
         var cs=getComputedStyle(hd), m=hd.getBoundingClientRect().left+parseFloat(cs.paddingLeft), cw=hd.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight); if(innerWidth>=992){ var gp=parseFloat(getComputedStyle(l).columnGap)||24; l.style.setProperty('--gw',((cw-gp*(l.children.length-1))/l.children.length)+'px'); } else l.style.removeProperty('--gw'); var  st=innerWidth*(innerWidth<768?0.9:0.6), en=Math.min(m, innerWidth-m-(l.lastElementChild.offsetLeft+l.lastElementChild.offsetWidth));
         l.style.transform='translateX('+(st+(en-st)*p)+'px)'; }
       addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd(); });
+    if(window.jQuery){ jQuery(function(){ jQuery('#gnb li').off('mouseover'); jQuery('#gnb ul li a').off('focus'); }); }
     if(typeof AOS!=='undefined') AOS.refresh();
     // 서브 수치 카운트업 (원본 홈 countUp 방식: 화면에 들어오면 2/3 지점부터)
     var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2'));
