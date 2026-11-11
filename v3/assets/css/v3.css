@@ -464,7 +464,7 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 @media(max-width:768px){.v3-photo4{grid-template-columns:1fr;gap:32px}}
 /* 수준별·요일별 커리큘럼 카드 */
 .v3-cur .v3-lvl-desc{font-size:18px;line-height:1.7;word-break:keep-all;color:#555}
-.v3-cur-box{padding:32px 36px!important;border-radius:20px;background:#EEF3FA!important}
+.v3-cur-box{padding:32px 28px!important;border-radius:20px;background:#EEF3FA!important}
 .v3-cur-box .list-dot{list-style:none;margin:0;padding:0}
 .v3-cur-box .list-dot li{position:relative;padding-left:14px;font-size:16px;line-height:1.6;color:#555}
 .v3-cur-box .list-dot li+li{margin-top:6px}
