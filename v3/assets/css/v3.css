@@ -446,8 +446,8 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 .v3-lvl-chips li{padding:6px 16px;border-radius:20px;background:#fff;border:1px solid #d6e2f2;font-size:15px;font-weight:500;color:#376CB2}
 .v3-lvl-out{padding:16px 20px!important;border-radius:14px}
 @media(max-width:767.98px){.v3-lvl-box{padding:24px 20px!important}}
-.v3-gcards .sect5Swiper .swiper-slide .img{position:relative;padding-top:0!important;height:auto!important;aspect-ratio:3/4;background:#fff}
-.v3-gcards .sect5Swiper .swiper-slide .img img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:contain!important;transform:none!important}
+.v3-gcards .sect5Swiper .swiper-slide .img{position:relative;padding-top:0!important;height:auto!important;aspect-ratio:5/7;background:transparent}
+.v3-gcards .sect5Swiper .swiper-slide .img img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:cover!important;background:transparent!important;transform:none!important}
 /* 정점핑클럽 수상 내역 카드 그리드 (3열) */
 .v3-awg{list-style:none;padding:0;row-gap:24px}
 .v3-awc{height:100%;background:transparent}
