@@ -489,6 +489,15 @@ section.contain.line-bx:has(.circle-bx) .circle-bx{margin:0 auto}
 .contents>.v3-sec section.benefit::before,.contents>.v3-sec section.benefit::after{display:none!important}
 .contents>.v3-sec section.benefit{background:transparent!important}
 .contents>.v3-sec section.benefit .v3-ic{background:#fff!important}
+/* 연수: 달라지는 3가지 — 제목 위, 카드 가로 1줄 */
+section.contain.line-bx:has(.bx)>.row{flex-direction:column}
+section.contain.line-bx:has(.bx)>.row>.col-lg-3,section.contain.line-bx:has(.bx)>.row>.vision-wrap{flex:0 0 100%;max-width:100%;width:100%}
+section.contain.line-bx:has(.bx)>.row>.col-lg-3{padding-bottom:48px!important}
+section.contain.line-bx:has(.bx) .bx{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;width:100%}
+section.contain.line-bx:has(.bx) .bx>div{width:auto!important;max-width:none!important;margin:0!important;grid-column:auto!important;grid-row:auto!important}
+section.contain.line-bx:has(.bx) .vision-wrap>.line-bx{padding-top:0!important}
+section.contain.line-bx:has(.bx) .bx{margin-top:0!important}
+@media(max-width:767.98px){section.contain.line-bx:has(.bx) .bx{grid-template-columns:1fr!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
