@@ -470,6 +470,13 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 .v3-cur-box .list-dot li+li{margin-top:6px}
 .v3-cur-box .list-dot li::before{content:'';position:absolute;left:0;top:.7em;width:4px;height:4px;border-radius:50%;background:#999}
 @media(max-width:767.98px){.v3-cur-box{padding:24px 20px!important}}
+/* 줄넘기 인증 급수 무엇이 좋을까요: 제목 위 + 가운데 정렬 */
+section.contain.line-bx:has(.circle-bx)>.row{flex-direction:column;align-items:center}
+section.contain.line-bx:has(.circle-bx)>.row>.col-lg-3{flex:0 0 auto;max-width:100%;width:100%;text-align:center;padding-bottom:48px!important}
+section.contain.line-bx:has(.circle-bx)>.row>.vision-wrap{flex:0 0 auto;max-width:100%;width:100%;display:flex;justify-content:center}
+section.contain.line-bx:has(.circle-bx) .line-bx,section.contain.line-bx:has(.circle-bx) .circle-bx-wrp{display:flex;justify-content:center;width:100%}
+section.contain.line-bx:has(.circle-bx) .circle-bx{margin:0 auto}
+.contents>.v3-sec:has(.v3-tree-eb):has(.v3-dl){background:#EEF3FA}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
