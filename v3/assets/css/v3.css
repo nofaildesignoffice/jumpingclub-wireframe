@@ -523,6 +523,13 @@ section.contain.line-bx:has(.bx) .bx{margin-top:0!important}
 .board-qna .qna-q::before{content:'';position:absolute;right:24px;top:50%;width:32px;height:32px;margin-top:-16px;z-index:1;background:linear-gradient(var(--primary),var(--primary)) center/2px 12px no-repeat;transition:opacity .2s}
 .board-qna .qna-q:not(.collapsed)::before{opacity:0}
 @media(max-width:575.98px){.board-qna .qna-q{padding-right:56px!important}.board-qna .qna-q::after,.board-qna .qna-q::before{right:12px}}
+/* 점핑클럽 주니어마스터 자격 표 간격 */
+section.contain:not(.board) ul.v3-t3 li{grid-template-columns:200px 1fr 160px;gap:32px;padding:22px 32px}
+section.contain:not(.board) ul.v3-t3 li>p.no{width:auto!important;text-align:left!important;color:var(--dark);font-weight:700;white-space:nowrap}
+section.contain:not(.board) ul.v3-t3 li>p.date{text-align:left!important;color:var(--primary);font-weight:700;white-space:nowrap}
+section.contain:not(.board) ul.v3-t3 li.v3-head{padding-top:16px;padding-bottom:16px}
+section.contain:not(.board) ul.v3-t3 li.v3-head>p{color:#666!important;font-weight:600}
+@media(max-width:991px){section.contain:not(.board) ul.v3-t3 li{grid-template-columns:130px 1fr;gap:6px 20px;padding:18px 16px}section.contain:not(.board) ul.v3-t3 li>p.date{grid-column:2}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
