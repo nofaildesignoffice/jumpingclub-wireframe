@@ -498,6 +498,31 @@ section.contain.line-bx:has(.bx) .bx>div{width:auto!important;max-width:none!imp
 section.contain.line-bx:has(.bx) .vision-wrap>.line-bx{padding-top:0!important}
 section.contain.line-bx:has(.bx) .bx{margin-top:0!important}
 @media(max-width:767.98px){section.contain.line-bx:has(.bx) .bx{grid-template-columns:1fr!important}}
+/* 연수 과정 카드: 투명 배경 + 박스형 신청 버튼 */
+.board-gallery:has(.v3-cbtn) li>a{background:transparent!important;box-shadow:none!important}
+.board-gallery:has(.v3-cbtn) li>a .cont{padding:20px 0 0!important;background:transparent!important}
+.v3-cbtn{display:flex;align-items:center;justify-content:center;width:100%;height:52px;margin-top:20px;border-radius:10px;background:var(--primary);color:#fff;font-size:16px;font-weight:600;transition:background .2s}
+.board-gallery li>a:hover .v3-cbtn{background:#2a5594}
+/* 신청 절차: 카드형 스텝 */
+.v3-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;counter-reset:f}
+.v3-flow-item{position:relative;background:#EEF3FA;border-radius:20px;padding:28px 28px 32px;margin:0}
+.v3-flow-item:not(:last-child)::after{content:'';position:absolute;top:50%;right:-24px;width:24px;height:24px;margin-top:-12px;z-index:1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23376CB2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E") center/14px no-repeat}
+.v3-flow-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.v3-flow-num{display:inline-block;padding:6px 14px;border-radius:999px;background:#fff;color:var(--primary);font-size:13px;font-weight:700;letter-spacing:.04em}
+.v3-flow .v3-si{width:44px;height:44px;background-color:var(--primary)}
+.v3-flow-item .h5{margin:0 0 8px}
+.v3-flow-item .v3-step-d{margin:0;color:#666;font-size:15px;line-height:1.6;word-break:keep-all}
+.v3-flow-item:last-child{background:var(--primary)}
+.v3-flow-item:last-child .h5,.v3-flow-item:last-child .v3-step-d{color:#fff}
+.v3-flow-item:last-child .v3-si{background-color:#fff}
+@media(max-width:991.98px){.v3-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.v3-flow-item::after{display:none}}
+@media(max-width:575.98px){.v3-flow{grid-template-columns:1fr;gap:12px}.v3-flow-top{margin-bottom:16px}}
+/* FAQ: 오른쪽 +/− 토글 */
+.board-qna .qna-q{position:relative;padding-right:72px!important}
+.board-qna .qna-q::after{content:'';position:absolute;right:24px;top:50%;width:32px;height:32px;margin-top:-16px;border-radius:50%;border:1px solid #d5deea;background:#fff linear-gradient(var(--primary),var(--primary)) center/12px 2px no-repeat}
+.board-qna .qna-q::before{content:'';position:absolute;right:24px;top:50%;width:32px;height:32px;margin-top:-16px;z-index:1;background:linear-gradient(var(--primary),var(--primary)) center/2px 12px no-repeat;transition:opacity .2s}
+.board-qna .qna-q:not(.collapsed)::before{opacity:0}
+@media(max-width:575.98px){.board-qna .qna-q{padding-right:56px!important}.board-qna .qna-q::after,.board-qna .qna-q::before{right:12px}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
