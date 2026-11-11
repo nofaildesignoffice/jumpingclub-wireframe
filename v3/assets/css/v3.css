@@ -448,6 +448,13 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 @media(max-width:767.98px){.v3-lvl-box{padding:24px 20px!important}}
 .v3-gcards .sect5Swiper .swiper-slide .img{position:relative;padding-top:0!important;height:auto!important;aspect-ratio:3/4;background:#fff}
 .v3-gcards .sect5Swiper .swiper-slide .img img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:contain!important;transform:none!important}
+/* 정점핑클럽 수상 내역 카드 그리드 (3열) */
+.v3-awg{list-style:none;padding:0;row-gap:24px}
+.v3-awc{height:100%;background:#EEF3FA;border-radius:20px;overflow:hidden}
+.v3-awc .v3-a4{margin:0;aspect-ratio:210/297;border-radius:20px;overflow:hidden;background:#fff}
+.v3-awc .v3-a4 img{width:100%;height:100%;object-fit:cover;display:block}
+.v3-awc-name{margin:0;padding:24px 32px 28px;font-size:18px;font-weight:700;color:#333;line-height:1.4;word-break:keep-all}
+@media(max-width:767.98px){.v3-awc-name{padding:20px 24px 24px}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
