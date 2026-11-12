@@ -556,6 +556,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* 인사말 섹션 위아래 여백 */
 .contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:120px 0!important}
 @media(max-width:767.98px){.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:80px 0!important}}
+.contents:has(>.sc.heart.intro:first-child img[alt="회장 프로필 사진"]){padding-top:0!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
