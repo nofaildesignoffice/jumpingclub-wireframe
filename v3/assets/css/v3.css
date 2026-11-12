@@ -536,6 +536,19 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* 신청 절차: 모든 STEP 글자를 원 중심에 정렬 */
 @media(min-width:992px){.heartheart .process .recruit-process .step.last{flex:0 0 auto;width:292px;max-width:292px}
 .heartheart .process .recruit-process .step>*:not(.step-img){position:relative;left:78px;transform:translateX(-50%);width:max-content;max-width:260px;text-align:center;margin-left:0;margin-right:0}}
+/* 연한 파랑 구분 섹션 */
+.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]),
+.contents>.sc.index:has(>section.sect3),
+.contents>.v3-sec:has(img[alt="급수 수업 장면"]),
+.contents>.v3-sec:has(img[alt="주니어마스터 단체 사진"]),
+.contents>.v3-sec:has(a[href^="P06-course"] .v3-cbtn){background:#F4F8FD}
+.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings,
+.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section,
+.contents>.sc.index>section.sect3,
+.contents>.v3-sec:has(img[alt="급수 수업 장면"]) .sc,
+.contents>.v3-sec:has(img[alt="주니어마스터 단체 사진"]) .sc,
+.contents>.v3-sec:has(a[href^="P06-course"] .v3-cbtn) section{background-color:transparent!important}
+.contents>.sc.index>section.sect3 .logo img{mix-blend-mode:multiply}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
