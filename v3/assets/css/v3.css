@@ -572,7 +572,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 .ct .contents .sc.index .v3-gcards.sect5 .sect5Swiper .swiper-slide.swiper-slide .link{padding:20px 0 0!important}
 /* 메인 sect2: 처음 흰 배경 → 대회·활동 나오면 배경 이미지 */
 .index section.sect2 .contents{background:#fff!important}
-.index section.sect2 .contents::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.jpg) center/cover no-repeat,#376CB2;opacity:0;transition:opacity .8s ease;pointer-events:none;z-index:0}
+.index section.sect2 .contents::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(91,135,195,0) 70%,#5B87C3 100%),linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.jpg) center/cover no-repeat,#376CB2;opacity:0;transition:opacity .8s ease;pointer-events:none;z-index:0}
 .index section.sect2 .contents>.contain{position:relative;z-index:1}
 .index section.sect2:has(a[href="#sect2-tab2"].on) .contents::before{opacity:1}
 .index section.sect2 .contents :is(.h2,.h5,.desc,.text-primary,.cnt,.tab-link li a){transition:color .6s ease,border-color .6s ease}
