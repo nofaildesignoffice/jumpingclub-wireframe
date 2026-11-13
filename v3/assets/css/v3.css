@@ -640,6 +640,9 @@ footer.ft{border-top:1px solid #e5e5e5}
 .v3-lgrid .img img{display:block;width:100%;height:100%;object-fit:cover}
 .v3-lgrid .img img[src$=".png"]{object-fit:contain;padding:28px}
 @media(max-width:767.98px){.v3-lgrid{grid-template-columns:1fr;gap:16px;margin-top:24px}}
+/* P05 영상 탭 아래 여백 (자료 블록과 같은 48px) */
+.v3-matg:has(#mv0)>.nav-wrap{margin-bottom:48px!important}
+@media(max-width:767.98px){.v3-matg:has(#mv0)>.nav-wrap{margin-bottom:32px!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
