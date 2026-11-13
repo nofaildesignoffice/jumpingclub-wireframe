@@ -817,6 +817,8 @@ header.hd .v3-nolink{cursor:default}
 .ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dl{margin:0!important;flex:1;min-width:0}
 .ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dd{margin-top:6px!important}
 @media(max-width:767.98px){.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6{width:100%!important;padding:22px 20px!important;gap:18px}.ct.v3-p05 .contents>.v3-sec section.benefit .v3-ic.v3-ic-anim{width:60px!important;height:60px!important}.ct.v3-p05 .contents>.v3-sec section.benefit .v3-ic .v3-bic{width:38px!important;height:38px!important}}
+/* P05 고민 카드 제목 한 줄 */
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dt br{display:none}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
