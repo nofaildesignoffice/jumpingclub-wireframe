@@ -725,6 +725,9 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .ct.v3-p05 .nav-wrap>.nav-pills .nav-link:not(.active){background:#fff!important;border-radius:16px}
 /* 메인 sect2: 처음 상태 "Since 2011" 브랜드 컬러 */
 .index section.sect2:not(:has(a[href="#sect2-tab2"].on)) .contents .sect2-head p.h5{color:#376CB2!important}
+/* 메인 sect2 "협회 소개 보기": 원형 → 알약형 버튼, 아이콘 제거 */
+.index section.sect2 .btn-big-support{display:inline-block!important;width:auto!important;height:auto!important;padding:20px 40px!important;border-radius:36px!important;font-size:18px!important;font-weight:500!important;line-height:1.4!important;flex-direction:row!important}
+.index section.sect2 .btn-big-support .icon-heart{display:none!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
