@@ -54,7 +54,7 @@
     })();
     if(typeof AOS!=='undefined') AOS.refresh();
     // 서브 수치 카운트업 (원본 홈 countUp 방식: 화면에 들어오면 2/3 지점부터)
-    var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2'));
+    var cnt=[].slice.call(document.querySelectorAll('.v3-stats .h2, .v3-stats .v3-vk-n'));
     if(cnt.length && 'IntersectionObserver' in window){
       var io=new IntersectionObserver(function(es){ es.forEach(function(en){ if(!en.isIntersecting) return; io.unobserve(en.target);
         var el=en.target, m=el.textContent.match(/^([0-9,]+)(.*)$/); if(!m) return;

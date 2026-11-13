@@ -696,6 +696,20 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 /* P05 Compare·Solution 04 섹션 배경 연한 파랑 */
 .ct.v3-p05>.contents>.v3-sec:has(.v3-table),.ct.v3-p05>.contents>.v3-sec:has(section.sect1){background:#F4F8FD!important}
 .ct.v3-p05>.contents>.v3-sec:has(.v3-table) :is(.sc,section),.ct.v3-p05>.contents>.v3-sec:has(section.sect1) :is(.sc,section.sect1){background:transparent!important}
+/* P05 숫자 섹션: 이미지 + 2x2 숫자 박스 (참고: 쏭스 v12 숫자 섹션) */
+.v3-stats{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
+.v3-vk{display:flex;gap:18px;align-items:stretch}
+.v3-vk-img{flex:0 0 48%;min-width:0;border-radius:12px;overflow:hidden;min-height:420px}
+.v3-vk-img img{width:100%;height:100%;object-fit:cover;display:block}
+.v3-vk-box{flex:1 1 0;min-width:0;display:flex;flex-wrap:wrap;gap:18px;list-style:none;margin:0;padding:0}
+.v3-vk-box>li{flex:0 0 calc(50% - 9px);display:flex;flex-direction:column;justify-content:flex-end;border-radius:12px;background:#F4F8FD;padding:28px 29px 37px;min-height:201px;transition:background .3s,transform .3s;transform:rotate(0deg)}
+.v3-vk-n{display:block;font-weight:700;font-size:clamp(30px,3.6vw,52px);line-height:1.4;letter-spacing:-.04em;color:#111;transition:color .3s}
+.v3-vk-box>li em{display:block;margin:6px 0 0;font-style:normal;font-weight:700;font-size:16px;color:#111;transition:color .3s}
+.v3-vk-box>li:hover{background:var(--primary);transform:rotate(5.14deg)}
+.v3-vk-box>li:hover .v3-vk-n,.v3-vk-box>li:hover em{color:#fff}
+@media(max-width:991.98px){.v3-vk{flex-direction:column;gap:9px}.v3-vk-img{flex:1 1 auto;min-height:0;aspect-ratio:16/9;border-radius:8px}.v3-vk-box{gap:9px}.v3-vk-box>li{flex:0 0 calc(50% - 4.5px);border-radius:8px;padding:16px 18px 18px;min-height:0}.v3-vk-n{font-size:28.5px}}
+/* P05 후기 섹션 ~ FAQ: 본문 폭 1152px 통일 */
+.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper) .contain,.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper)~.v3-sec .contain{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
