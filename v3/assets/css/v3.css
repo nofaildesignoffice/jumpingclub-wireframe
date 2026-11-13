@@ -694,7 +694,7 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .sc.index section.sect7 a.btn-big-support[href="P05-apply.html"]{width:auto!important;height:62px!important;min-width:0!important;padding:0 56px!important;border-radius:20px!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:10px;white-space:nowrap}
 .sc.index section.sect7 a.btn-big-support[href="P05-apply.html"] .icon-heart{margin:0!important;position:static!important}
 /* P05 Compare·Solution 04 섹션 배경 연한 파랑 */
-.ct.v3-p05>.contents>.v3-sec:has(.v3-table),.ct.v3-p05>.contents>.v3-sec:has(section.sect1){background:#F4F8FD!important}
+.ct.v3-p05>.contents>.v3-sec:has(.v3-table),.ct.v3-p05>.contents>.v3-sec:has(section.sect1),.ct.v3-p05>.contents>.v3-sec:has(.col-lg-9 .list-dot .badge-circle),.ct.v3-p05>.contents>.v3-sec:has(.col-lg-9 .badge-circle){background:#F4F8FD!important}
 .ct.v3-p05>.contents>.v3-sec:has(.v3-table) :is(.sc,section),.ct.v3-p05>.contents>.v3-sec:has(section.sect1) :is(.sc,section.sect1){background:transparent!important}
 /* P05 숫자 섹션: 이미지 + 2x2 숫자 박스 (참고: 쏭스 v12 숫자 섹션) */
 .v3-stats{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important}
@@ -710,6 +710,9 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 @media(max-width:991.98px){.v3-vk{flex-direction:column;gap:9px}.v3-vk-img{flex:1 1 auto;min-height:0;aspect-ratio:16/9;border-radius:8px}.v3-vk-box{gap:9px}.v3-vk-box>li{flex:0 0 calc(50% - 4.5px);border-radius:8px;padding:16px 18px 18px;min-height:0}.v3-vk-n{font-size:28.5px}}
 /* P05 후기 섹션 ~ FAQ: 본문 폭 1152px 통일 */
 .ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper) .contain,.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper)~.v3-sec .contain{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
+/* P05 Membership: 타이틀을 카드 위로 */
+.ct.v3-p05 .v3-sec:has(.v3-mrow) section.contain>.row>.col-lg-4,.ct.v3-p05 .v3-sec:has(.v3-mrow) section.contain>.row>.col-lg-8{flex:0 0 100%!important;max-width:100%!important}
+.ct.v3-p05 .v3-sec:has(.v3-mrow) section.contain>.row>.col-lg-4{padding-bottom:40px!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
