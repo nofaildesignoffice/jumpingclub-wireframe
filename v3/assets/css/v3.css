@@ -9,8 +9,8 @@
 @media(max-width:991px){.ct .contents .sc+.sc,.ct .contents .sc+section,.ct .contents section+.sc,.ct .contents section+section{margin-top:90px}}
 
 /* 헤더 */
-header.hd .hd-top h1 a{background-image:url(../logo-white.png);background-repeat:no-repeat;background-position:left center;background-size:contain}
-body.is-scroll header.hd .hd-top h1 a,body.search-open header.hd .hd-top h1 a,body.gnb-open header.hd .hd-top h1 a,body:not(:has(.top-visual)) header.hd .hd-top h1 a{background-image:url(../logo-kmja.png)}
+header.hd .hd-top h1 a{background-image:url(../logo-jc-white.svg);background-repeat:no-repeat;background-position:left center;background-size:contain}
+body.is-scroll header.hd .hd-top h1 a,body.search-open header.hd .hd-top h1 a,body.gnb-open header.hd .hd-top h1 a,body:not(:has(.top-visual)) header.hd .hd-top h1 a{background-image:url(../logo-jc.svg)}
 header.hd .hd-top .v3-matjip{display:block;margin:0 12px 0 auto;height:44px;flex:none}header.hd .hd-top .v3-matjip img{height:44px;width:auto;display:block}
 header.hd #gnb ul{gap:0}header.hd #gnb ul li a{white-space:nowrap}
 @media(max-width:1400px){header.hd #gnb ul li{margin:0 10px!important}header.hd #gnb ul li a{font-size:15px}}
