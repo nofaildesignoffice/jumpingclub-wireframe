@@ -808,6 +808,15 @@ header.hd .v3-nolink{cursor:default}
 .v3-qm1>a:hover,.v3-qm1 .v3-q-sns>button:hover,.v3-qm1 .v3-q-sns.open>button{background:#F4F8FD!important;color:var(--primary)!important}
 .v3-qm1 svg{width:22px;height:22px;color:var(--primary);display:block}
 .v3-qm1 .v3-q-sns>div{right:84px}
+/* P05 고민 카드: 가로형 박스 세로 1줄 지그재그 */
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont{display:flex!important;flex-direction:column;gap:20px;max-width:980px;margin:0 auto!important}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6{width:74%!important;display:flex!important;align-items:center;gap:28px;padding:28px 36px!important;text-align:left}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6:nth-child(odd){align-self:flex-start}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6:nth-child(even){align-self:flex-end}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 .v3-ic{flex:none}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dl{margin:0!important;flex:1;min-width:0}
+.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dd{margin-top:6px!important}
+@media(max-width:767.98px){.ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6{width:100%!important;padding:22px 20px!important;gap:18px}.ct.v3-p05 .contents>.v3-sec section.benefit .v3-ic.v3-ic-anim{width:60px!important;height:60px!important}.ct.v3-p05 .contents>.v3-sec section.benefit .v3-ic .v3-bic{width:38px!important;height:38px!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
