@@ -744,6 +744,29 @@ body:has(.v3-fbar) .v3-quick{bottom:104px}
 @media(max-width:575.98px){.v3-fbar-in{padding:10px 16px;gap:12px}.v3-fbar-t b{font-size:14px}}
 /* 헤더: 클릭 안 되는 대메뉴(온라인캠퍼스) */
 header.hd .v3-nolink{cursor:default}
+/* P05 고민 카드: 애니메이션 아이콘 */
+.contents>.v3-sec section.benefit .v3-ic.v3-ic-anim{display:inline-grid!important;place-items:center;width:64px!important;height:64px!important;border-radius:50%;background:#EEF3FA!important;color:var(--primary)}
+.contents>.v3-sec section.benefit .v3-ic .v3-bic{width:32px!important;height:32px!important;overflow:visible;display:block}
+.v3-bic *{transform-box:fill-box}
+.v3-bic-idea .rays{animation:v3ray 1.8s ease-in-out infinite}
+.v3-bic-idea .bulb{animation:v3glow 1.8s ease-in-out infinite}
+@keyframes v3ray{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes v3glow{0%,100%{fill:transparent}50%{fill:rgba(55,108,178,.22)}}
+.v3-bic-rope .rope{transform-origin:50% 0%;animation:v3rope 1.2s ease-in-out infinite}
+@keyframes v3rope{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-.55)}}
+.v3-bic-bars rect{transform-origin:50% 100%;animation:v3bar 1.6s ease-in-out infinite}
+.v3-bic-bars .b2{animation-delay:.15s}.v3-bic-bars .b3{animation-delay:.3s}
+@keyframes v3bar{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
+.v3-bic-chat circle{animation:v3dot 1.2s ease-in-out infinite}
+.v3-bic-chat .d2{animation-delay:.2s}.v3-bic-chat .d3{animation-delay:.4s}
+@keyframes v3dot{0%,60%,100%{transform:translateY(0);opacity:.35}30%{transform:translateY(-2.5px);opacity:1}}
+.v3-bic-trophy .cup{transform-origin:50% 100%;animation:v3bounce 1.6s ease-in-out infinite}
+.v3-bic-trophy .spark{transform-origin:50% 50%;animation:v3spark 1.6s ease-in-out infinite}
+@keyframes v3bounce{0%,100%{transform:translateY(0)}40%{transform:translateY(-2px) rotate(-4deg)}60%{transform:translateY(-2px) rotate(4deg)}}
+@keyframes v3spark{0%,100%{transform:scale(.4);opacity:0}50%{transform:scale(1.1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.v3-bic *{animation:none!important}}
+/* P05 Solution 05: 세로로 쌓인 카드 사이 여백 */
+.ct.v3-p05 section.domestic .domestic-cont>.col-md-6>.radius+.radius{margin-top:40px!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
