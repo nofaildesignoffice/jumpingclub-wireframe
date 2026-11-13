@@ -655,6 +655,34 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* P05 Solution 라벨: 타이틀 위, 굵게, 브랜드 컬러 */
 .v3-sol{display:block;margin:0 0 12px!important;font-size:18px!important;font-weight:700!important;color:var(--primary)!important;letter-spacing:0}
 .tit>.v3-sol{margin-bottom:16px!important}
+/* P05 Solution 03: 표형 리스트 (시안 D) */
+.contents>.v3-sec:has(.v3-sold){background:#fff!important}
+.contents>.v3-sec:has(.v3-sold) .sc{background:transparent!important}
+section.v3-sold{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
+.v3-sold-head{margin-bottom:48px}
+.v3-sold-head .h2{margin:0}
+.v3-sold-list{border-top:2px solid #111;margin:0;padding:0;list-style:none}
+.v3-sold-list li{display:grid;grid-template-columns:160px 300px 1fr;gap:32px;align-items:center;padding:32px 8px;border-bottom:1px solid #E5E5E5;transition:background .2s}
+.v3-sold-list li:hover{background:#F4F8FD}
+.v3-sold-list .when{font-size:18px;font-weight:700;color:var(--primary)}
+.v3-sold-list .nm{font-size:20px;font-weight:700;color:#111;margin:0}
+.v3-sold-list .ds{font-size:16px;line-height:1.7;color:#555;margin:0;word-break:keep-all}
+@media(max-width:991.98px){.v3-sold-list li{grid-template-columns:1fr;gap:8px;padding:24px 4px}}
+/* P05 Solution 01: 타이틀을 카드 위로 */
+section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row{flex-direction:column;align-items:stretch}
+section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg{flex:0 0 auto;max-width:100%;width:100%}
+section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg .tit{margin-bottom:48px}
+section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg-7{flex:0 0 auto;max-width:100%;width:100%;margin:0!important}
+/* P05 Solution 04 타이틀: Solution 03 타이틀과 같은 크기 */
+.ct.v3-p05 section.sect1 h2.head-tit{font-size:40px!important;line-height:1.35!important;letter-spacing:normal}
+@media(max-width:767.98px){.ct.v3-p05 section.sect1 h2.head-tit{font-size:28px!important}}
+/* P05 Solution 04: 타이틀·카드를 본문 폭 1152px에 맞춤, 카드 3장 균등 */
+.ct.v3-p05 section.sect1>.contain,.ct.v3-p05 section.sect1>.heartSwiper{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
+@media(min-width:992px){.ct.v3-p05 section.sect1 .heartSwiper .swiper-slide{width:calc((100% - 48px)/3)!important}}
+/* P05 Solution 05 카드: 테두리·하늘색 배경 제거 */
+section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important}
+section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important;padding:20px 0 0!important}
+section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radius{border-radius:20px!important;overflow:hidden}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
