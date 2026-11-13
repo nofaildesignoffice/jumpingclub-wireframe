@@ -623,6 +623,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 @media(max-width:1199.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:767.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:1fr}}
 .v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper{padding-bottom:24px!important}
+.contents>.v3-sec section.benefit{overflow:visible!important}
 /* P05 후기 카드 본문 줄바꿈 */
 .v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p{white-space:normal!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 .v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p+p{margin-top:8px}
@@ -643,6 +644,14 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* P05 영상 탭 아래 여백 (자료 블록과 같은 48px) */
 .v3-matg:has(#mv0)>.nav-wrap{margin-bottom:48px!important}
 @media(max-width:767.98px){.v3-matg:has(#mv0)>.nav-wrap{margin-bottom:32px!important}}
+/* P05 Solution 01 카드: 가로 1줄 그리드 */
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0!important;align-items:stretch}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"])>.col-md-6{flex:none;max-width:none;width:auto;padding:0!important;margin:0!important;top:auto!important;transform:none!important}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"])>.col-md-6>.radius{height:100%;display:flex;flex-direction:column;margin:0!important}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius{aspect-ratio:4/3;height:auto!important;overflow:hidden;margin:0!important}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;position:static!important;transform:none!important}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) dl.box{flex:1 1 auto;margin:0!important}
+@media(max-width:767.98px){.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]){grid-template-columns:1fr}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
