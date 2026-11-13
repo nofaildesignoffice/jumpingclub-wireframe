@@ -767,6 +767,13 @@ header.hd .v3-nolink{cursor:default}
 @media(prefers-reduced-motion:reduce){.v3-bic *{animation:none!important}}
 /* P05 Solution 05: 세로로 쌓인 카드 사이 여백 */
 .ct.v3-p05 section.domestic .domestic-cont>.col-md-6>.radius+.radius{margin-top:40px!important}
+/* 카드 호버 A안: 살짝 떠오름 (사이트 전체 카드 그리드·슬라이더) */
+.ct .sect5Swiper .swiper-slide>a,.ct .heartSwiper .swiper-slide,.ct .row>[class*="col"]>.radius,.ct section.benefit .benefit-cont>.col-md-6,.ct .box.h-100,.ct ul.row>li>a,.ct .sect3-list .col-lg-4>div,.ct .v3-vid{transition:transform .35s ease,box-shadow .35s ease}
+.ct .sect5Swiper .swiper-slide>a:hover,.ct .heartSwiper .swiper-slide:hover,.ct .row>[class*="col"]>.radius:hover,.ct section.benefit .benefit-cont>.col-md-6:hover,.ct .box.h-100:hover,.ct ul.row>li>a:hover,.ct .sect3-list .col-lg-4>div:hover,.ct .v3-vid:hover{transform:translateY(-6px)!important;box-shadow:0 18px 36px rgba(22,48,79,.16)!important}
+.ct .v3-vid:hover,.ct .sc.index .v3-gcards.sect5 .swiper-slide>a:hover{box-shadow:none!important}
+.ct .v3-vid:hover .img{box-shadow:0 18px 36px rgba(22,48,79,.16)}
+.ct .sect5Swiper,.ct .heartSwiper{padding-top:10px!important;margin-top:-10px!important}
+@media(hover:none){.ct .sect5Swiper .swiper-slide>a:hover,.ct .heartSwiper .swiper-slide:hover,.ct .row>[class*="col"]>.radius:hover,.ct section.benefit .benefit-cont>.col-md-6:hover,.ct .box.h-100:hover,.ct ul.row>li>a:hover,.ct .sect3-list .col-lg-4>div:hover,.ct .v3-vid:hover{transform:none!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
