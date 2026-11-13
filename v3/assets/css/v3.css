@@ -832,7 +832,7 @@ header.hd .v3-nolink{cursor:default}
 /* P02 탭 섹션 위 여백 = 아래 여백(80) */
 .sc.business>.v3-tg{padding-top:80px!important}
 /* P05-apply: 히어로 없이 제목+폼 */
-.ct.v3-apply-pg{padding-top:100px}.ct.v3-apply-pg .contents{padding-top:0!important}.ct.v3-apply-pg .contents>section.v3-apform{margin-top:0!important;padding-top:40px!important;padding-bottom:120px!important}
+.ct.v3-apply-pg{padding-top:100px}.ct.v3-apply-pg .contents{padding-top:0!important;margin-top:0!important}.ct.v3-apply-pg .contents>section.v3-apform{margin-top:0!important;padding-top:40px!important;padding-bottom:120px!important}
 .v3-apply-head .v3-apply-eb{color:var(--primary)!important}
 .v3-apply-head{margin-bottom:48px}.v3-apply-head .h1{color:#111}.v3-apply-head .h4{color:#555}
 /* 몰·활동 목록 카드: 흰 카드 안쪽 여백 */
