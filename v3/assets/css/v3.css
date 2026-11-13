@@ -774,6 +774,13 @@ header.hd .v3-nolink{cursor:default}
 .ct .v3-vid:hover .img{box-shadow:0 18px 36px rgba(22,48,79,.16)}
 .ct .sect5Swiper,.ct .heartSwiper{padding-top:10px!important;margin-top:-10px!important}
 @media(hover:none){.ct .sect5Swiper .swiper-slide>a:hover,.ct .heartSwiper .swiper-slide:hover,.ct .row>[class*="col"]>.radius:hover,.ct section.benefit .benefit-cont>.col-md-6:hover,.ct .box.h-100:hover,.ct ul.row>li>a:hover,.ct .sect3-list .col-lg-4>div:hover,.ct .v3-vid:hover{transform:none!important}}
+/* 퀵메뉴 01안: 흰 캡슐 세로바 */
+.v3-quick.v3-qm1{gap:0;align-items:stretch;background:#fff;border-radius:40px;padding:8px;box-shadow:0 10px 30px rgba(22,48,79,.16)}
+.v3-qm1>a,.v3-qm1 .v3-q-sns>button{width:64px!important;min-height:0!important;height:auto!important;padding:12px 0!important;display:flex!important;flex-direction:column;align-items:center;gap:6px;border-radius:32px!important;background:transparent!important;box-shadow:none!important;color:#333!important;font-size:11px!important;font-weight:600!important;line-height:1.2!important;transition:background .2s,color .2s}
+.v3-qm1>*+*{border-top:1px solid #eef1f5}
+.v3-qm1>a:hover,.v3-qm1 .v3-q-sns>button:hover,.v3-qm1 .v3-q-sns.open>button{background:#F4F8FD!important;color:var(--primary)!important}
+.v3-qm1 svg{width:22px;height:22px;color:var(--primary);display:block}
+.v3-qm1 .v3-q-sns>div{right:84px}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
