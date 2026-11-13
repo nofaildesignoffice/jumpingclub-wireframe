@@ -690,6 +690,9 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .v3-mrow{row-gap:24px}
 .v3-mbox{background:#F6F6F6!important;border:0!important;border-radius:20px!important;padding:32px!important}
 .v3-mbox .v3-mbox-p{padding-top:16px;margin-top:auto;font-weight:700;color:#111}
+/* P05 마지막 CTA 가입 문의하기: 원형 → 박스형 (가입 문의 페이지 버튼과 같은 규격) */
+.sc.index section.sect7 a.btn-big-support[href="P05-apply.html"]{width:auto!important;height:62px!important;min-width:0!important;padding:0 56px!important;border-radius:20px!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:10px;white-space:nowrap}
+.sc.index section.sect7 a.btn-big-support[href="P05-apply.html"] .icon-heart{margin:0!important;position:static!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
