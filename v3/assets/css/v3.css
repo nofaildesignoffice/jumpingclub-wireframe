@@ -634,7 +634,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 .ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top) :is(.font-title,.v3-st,.h5,.v3-sd){color:#fff!important}
 @media(max-width:991.98px){.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top){background-attachment:scroll!important;padding:100px 0!important}}
 /* P05 유형별 자료 묶음: 본문 폭 1152px (v2와 동일) */
-.contents>.v3-sec:is(:has(.v3-matg),:has(.v3-matg-head)) .contain{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
+.contents>.v3-sec:is(:has(.v3-matg),:has(.v3-matg-head)) .contain{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important}
 /* P05 로고·간판·인테리어: 탭별 이미지 3장 그리드 */
 .v3-lgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
 .v3-lgrid .img{margin:0;border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:#fff;box-shadow:0 8px 24px rgba(22,48,79,.08)}
@@ -658,7 +658,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* P05 Solution 03: 표형 리스트 (시안 D) */
 .contents>.v3-sec:has(.v3-sold){background:#fff!important}
 .contents>.v3-sec:has(.v3-sold) .sc{background:transparent!important}
-section.v3-sold{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
+section.v3-sold{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important}
 .v3-sold-head{margin-bottom:48px}
 .v3-sold-head .h2{margin:0}
 .v3-sold-list{border-top:2px solid #111;margin:0;padding:0;list-style:none}
@@ -677,7 +677,7 @@ section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>
 .ct.v3-p05 section.sect1 h2.head-tit{font-size:40px!important;color:#111!important;line-height:1.35!important;letter-spacing:normal}
 @media(max-width:767.98px){.ct.v3-p05 section.sect1 h2.head-tit{font-size:28px!important}}
 /* P05 Solution 04: 타이틀·카드를 본문 폭 1152px에 맞춤, 카드 3장 균등 */
-.ct.v3-p05 section.sect1>.contain,.ct.v3-p05 section.sect1>.heartSwiper{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
+.ct.v3-p05 section.sect1>.contain,.ct.v3-p05 section.sect1>.heartSwiper{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
 @media(min-width:992px){.ct.v3-p05 section.sect1 .heartSwiper .swiper-slide{width:calc((100% - 48px)/3)!important}}
 /* P05 Solution 05 카드: 테두리·하늘색 배경 제거 */
 section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important}
@@ -697,7 +697,7 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .ct.v3-p05>.contents>.v3-sec:has(.v3-table),.ct.v3-p05>.contents>.v3-sec:has(section.sect1){background:#F4F8FD!important}
 .ct.v3-p05>.contents>.v3-sec:has(.v3-table) :is(.sc,section),.ct.v3-p05>.contents>.v3-sec:has(section.sect1) :is(.sc,section.sect1){background:transparent!important}
 /* P05 숫자 섹션: 이미지 + 2x2 숫자 박스 (참고: 쏭스 v12 숫자 섹션) */
-.v3-stats{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
+.v3-stats{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important}
 .v3-vk{display:flex;gap:18px;align-items:stretch}
 .v3-vk-img{flex:0 0 48%;min-width:0;border-radius:12px;overflow:hidden;min-height:420px}
 .v3-vk-img img{width:100%;height:100%;object-fit:cover;display:block}
@@ -709,7 +709,7 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .v3-vk-box>li:hover .v3-vk-n,.v3-vk-box>li:hover em{color:#fff}
 @media(max-width:991.98px){.v3-vk{flex-direction:column;gap:9px}.v3-vk-img{flex:1 1 auto;min-height:0;aspect-ratio:16/9;border-radius:8px}.v3-vk-box{gap:9px}.v3-vk-box>li{flex:0 0 calc(50% - 4.5px);border-radius:8px;padding:16px 18px 18px;min-height:0}.v3-vk-n{font-size:28.5px}}
 /* P05 후기 섹션 ~ FAQ: 본문 폭 1152px 통일 */
-.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper) .contain,.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper)~.v3-sec .contain{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
+.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper) .contain,.ct.v3-p05>.contents>.v3-sec:has(.sect5Swiper)~.v3-sec .contain{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
@@ -726,3 +726,30 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .v3-goal-list li .v3-goal-no{font-size:15px;font-weight:600;opacity:.8;margin-bottom:6px}
 @media(max-width:767.98px){.v3-goal-pin{padding-top:70px}.v3-goal-head{margin-bottom:24px}.v3-goal-list{gap:12px}.v3-goal-list li .img img{width:calc(100vw - 80px);height:440px;min-height:0}.v3-goal-list li dt{font-size:22px}.v3-goal-list li dd{font-size:15px}.v3-goal-list li dl{padding:60px 18px 18px}}
 @media(max-width:399.98px){.v3-goal-list li .img img{height:380px}}
+/* ── 전역 본문폭 규격: 본문 최대 1200px, 좌우 여백 PC 40 / 태블릿 32·24 / 모바일 20 ── */
+:root{--v3-gut:40px;--v3-cw:1280px}
+@media(max-width:1199.98px){:root{--v3-gut:32px}}
+@media(max-width:991.98px){:root{--v3-gut:24px}}
+@media(max-width:575.98px){:root{--v3-gut:20px}}
+.ct .oversea-cont{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
+/* 헤더: 992~1279px 노트북에서 메뉴·버튼이 넘치지 않도록 압축 */
+@media(min-width:992px) and (max-width:1279.98px){
+header.hd .hd-top{padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
+header.hd .hd-top h1 a{width:150px!important}
+header.hd .hd-top #gnb>ul>li{margin-left:6px!important}
+header.hd .hd-top #gnb>ul>li>a{font-size:14px!important;padding-left:6px!important;padding-right:6px!important}
+header.hd .hd-top .v3-matjip,header.hd .hd-top .v3-matjip img{height:36px}
+header.hd .hd-top .v3-matjip{margin-right:8px}
+header.hd .hd-top .btn-support{height:44px!important;min-width:0!important;padding:0 16px!important;font-size:14px!important;margin-left:6px!important}
+}
+/* 신청 절차 STEP: 992~1279px에서 화면 밖으로 나가지 않게 */
+@media(min-width:992px) and (max-width:1279.98px){.heartheart .process .recruit-process{justify-content:flex-start!important}
+.heartheart .process .recruit-process .step:not(.last){flex:1 1 0!important;min-width:0!important;width:auto!important;max-width:none!important}
+.heartheart .process .recruit-process .step.last{width:200px!important;max-width:200px!important}
+.heartheart .process .recruit-process .step>*:not(.step-img){max-width:200px!important;white-space:normal}}
+/* 게시판 분류 탭: 좁은 화면에서 넘치지 않고 줄바꿈 */
+.v3-bbar>.nav-wrap{flex:1 1 auto;min-width:0}
+.v3-bbar .nav-cate{flex-wrap:wrap!important;row-gap:8px}
+.v3-bbar .nav-cate{column-gap:16px!important}@media(min-width:992px){.ct .v3-bbar .v3-bform .board-search.v3-sbox{width:220px!important;min-width:0!important;max-width:220px!important;flex:0 0 220px!important}.ct .v3-bbar .v3-bform .board-search.v3-sbox input{width:auto!important;min-width:0!important}}
+.ct .top-visual.sub .bread-crumb{padding-right:var(--v3-gut)!important;padding-left:var(--v3-gut)!important}
+.ct .contain,.ct section.contain{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
