@@ -731,40 +731,67 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 /* 메인 방송·시범 영상 섹션: 하단 CTA(sect7)와 같은 배경 */
 .index section.v3-vids{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' fill='none' stroke='%23ffffff' stroke-opacity='.6' stroke-width='2' stroke-linejoin='round'%3E%3Cpath d='M702 88 692 83 684 81 673 80 615 81 579 90 495 119 480 127 440 143 433 147 399 163 381 173 358 185 337 198 316 209 299 221 248 258 241 264 239 270 241 275 245 280 252 282 260 282 265 281 273 276 305 253 372 212 390 204 405 195 422 187 454 171 492 156 520 143 543 135 588 123 597 120 626 113 633 112 658 113 666 115 671 120 672 122 672 130 668 138 649 163 640 172 637 174 629 174 613 168 592 168 581 172 577 176 576 180 574 221 572 227 564 234 511 269 490 279 465 295 448 302 402 325 398 329 396 334 397 347 395 350 390 352 380 352 374 350 369 345 369 337 374 324 374 315 369 304 364 299 357 296 342 291 329 291 318 293 304 299 296 308 292 315 291 324 296 335 302 343 312 350 315 354 315 358 312 361 294 369 253 376 234 377 219 376 210 374 199 369 193 363 191 358 191 352 193 347 200 339 226 320 236 310 241 301 240 294 237 290 233 288 223 289 216 292 203 303 199 306 194 306 190 301 190 279 186 268 180 262 173 257 162 252 144 247 130 248 110 254 94 263 87 270 84 277 83 287 83 296 85 307 88 312 93 317 105 325 110 329 110 334 109 337 92 354 87 361 84 373 84 397 86 407 93 420 98 433 110 456 117 487 120 498 126 509 133 516 151 527 186 542 194 548 198 557 199 577 197 595 189 615 184 640 176 661 171 680 170 696 171 704 173 711 176 715 184 719 192 719 200 714 208 713 223 719 238 720 246 718 252 714 261 696 264 688 265 680 270 669 275 652 289 625 292 613 299 598 302 584 303 560 301 552 297 547 221 484 201 463 194 454 190 444 189 433 190 427 192 424 197 418 208 414 227 412 242 407 257 404 262 404 268 406 272 410 274 414 276 422 282 433 285 446 289 455 297 467 302 477 318 499 340 522 357 539 387 560 424 580 455 595 484 605 501 608 521 615 584 623 590 623 596 622 602 617 603 613 602 608 598 604 593 601 578 597 557 594 537 590 523 585 509 582 486 574 465 566 448 557 442 551 442 550 444 548 459 549 486 556 510 559 550 562 592 562 613 561 622 558 627 555 629 550 628 545 625 541 615 538 567 538 521 536 472 524 449 516 414 499 396 487 386 476 379 467 378 463 378 453 381 446 388 439 396 434 412 429 433 424 468 421 492 415 521 412 553 402 562 397 565 393 567 389 567 386 564 381 559 379 550 380 525 390 484 395 460 395 446 393 424 392 417 389 416 387 416 384 420 379 436 371 443 366 449 360 451 357 453 349 454 335 456 330 460 327 488 313 494 309 516 299 567 267 576 262 590 260 612 260 629 254 637 255 648 260 663 261 676 259 682 255 683 248 669 221 668 214 668 207 670 198 673 192 684 176 704 152 711 140 716 128 717 120 717 113 715 104 710 96z'/%3E%3C/svg%3E") center center/auto 96% no-repeat,linear-gradient(180deg,#fff 0%,#EEF3FA 30%,#8FB2DD 100%)!important}
 /* P05 하단 고정 CTA 바 */
-.v3-fbar{position:fixed;left:0;right:0;bottom:0;z-index:95;background:rgba(22,48,79,.96);backdrop-filter:blur(6px);box-shadow:0 -6px 24px rgba(0,0,0,.12)}
-.v3-fbar-in{max-width:var(--v3-cw);margin:0 auto;padding:14px var(--v3-gut);display:flex;align-items:center;justify-content:space-between;gap:24px}
-.v3-fbar-t{margin:0;display:flex;align-items:baseline;gap:16px;color:#fff;min-width:0}
-.v3-fbar-t b{font-size:20px;font-weight:700;white-space:nowrap}
-.v3-fbar-t span{font-size:15px;color:rgba(255,255,255,.7)}
-.v3-fbar-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 36px;border-radius:26px;background:var(--primary);color:#fff!important;font-size:17px;font-weight:700;transition:background .2s}
+.v3-fbar{position:fixed;left:0;right:0;bottom:0;z-index:95;background:#fff;border-top:1px solid #E6ECF4;box-shadow:0 -8px 28px rgba(22,48,79,.10)}
+.v3-fbar-in{max-width:var(--v3-cw);margin:0 auto;padding:24px var(--v3-gut);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.v3-fbar-t{margin:0;display:flex;align-items:baseline;gap:16px;color:#111;min-width:0}
+.v3-fbar-t b{font-size:22px;font-weight:700;white-space:nowrap}
+.v3-fbar-t span{font-size:16px;color:#666}
+.v3-fbar-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;height:60px;padding:0 44px;border-radius:30px;background:var(--primary);color:#fff!important;font-size:17px;font-weight:700;transition:background .2s}
 .v3-fbar-btn:hover{background:#2C5A96}
-body:has(.v3-fbar) footer{padding-bottom:80px}
-body:has(.v3-fbar) .v3-quick{bottom:104px}
+body:has(.v3-fbar) footer{padding-bottom:110px}
+body:has(.v3-fbar) .v3-quick{bottom:132px}
 @media(max-width:991.98px){.v3-fbar-t span{display:none}.v3-fbar-t b{font-size:16px;white-space:normal}.v3-fbar-btn{height:46px;padding:0 22px;font-size:15px}}
-@media(max-width:575.98px){.v3-fbar-in{padding:10px 16px;gap:12px}.v3-fbar-t b{font-size:14px}}
+@media(max-width:575.98px){.v3-fbar-in{padding:14px 16px;gap:12px}.v3-fbar-t b{font-size:14px}}
 /* 헤더: 클릭 안 되는 대메뉴(온라인캠퍼스) */
 header.hd .v3-nolink{cursor:default}
-/* P05 고민 카드: 애니메이션 아이콘 */
-.contents>.v3-sec section.benefit .v3-ic.v3-ic-anim{display:inline-grid!important;place-items:center;width:64px!important;height:64px!important;border-radius:50%;background:#EEF3FA!important;color:var(--primary)}
-.contents>.v3-sec section.benefit .v3-ic .v3-bic{width:32px!important;height:32px!important;overflow:visible;display:block}
-.v3-bic *{transform-box:fill-box}
-.v3-bic-idea .rays{animation:v3ray 1.8s ease-in-out infinite}
-.v3-bic-idea .bulb{animation:v3glow 1.8s ease-in-out infinite}
-@keyframes v3ray{0%,100%{opacity:.25}50%{opacity:1}}
-@keyframes v3glow{0%,100%{fill:transparent}50%{fill:rgba(55,108,178,.22)}}
-.v3-bic-rope .rope{transform-origin:50% 0%;animation:v3rope 1.2s ease-in-out infinite}
-@keyframes v3rope{0%,100%{transform:scaleY(1)}50%{transform:scaleY(-.55)}}
-.v3-bic-bars rect{transform-origin:50% 100%;animation:v3bar 1.6s ease-in-out infinite}
+/* P05 고민 카드: 일러스트 애니메이션 아이콘 v2 */
+.contents>.v3-sec section.benefit .v3-ic.v3-ic-anim{display:inline-grid!important;place-items:center;width:76px!important;height:76px!important;border-radius:24px;background:linear-gradient(145deg,#F4F8FD,#E4EDF8)!important;box-shadow:inset 0 0 0 1px rgba(55,108,178,.08)}
+.contents>.v3-sec section.benefit .v3-ic .v3-bic{width:48px!important;height:48px!important;overflow:visible;display:block}
+.v3-bic :is(.glow,.r,.rope,.shadow,.legs,.b,.q,.a,.d,.cup,.sp){transform-box:fill-box}
+/* 1 전구 */
+.v3-bic-idea .glow{opacity:0;transform-origin:50% 50%;animation:bIdeaGlow 2.6s cubic-bezier(.4,0,.2,1) infinite}
+.v3-bic-idea .glass{animation:bIdeaGlass 2.6s cubic-bezier(.4,0,.2,1) infinite}
+.v3-bic-idea .fil{animation:bIdeaFil 2.6s cubic-bezier(.4,0,.2,1) infinite}
+.v3-bic-idea .r{opacity:0;transform-origin:50% 50%;animation:bIdeaRay 2.6s cubic-bezier(.2,.8,.2,1) infinite}
+.v3-bic-idea .r2,.v3-bic-idea .r3{animation-delay:.08s}.v3-bic-idea .r4,.v3-bic-idea .r5{animation-delay:.16s}
+@keyframes bIdeaGlow{0%,20%{opacity:0;transform:scale(.6)}45%,70%{opacity:.45;transform:scale(1)}100%{opacity:0;transform:scale(.8)}}
+@keyframes bIdeaGlass{0%,20%{fill:#DCE8F7}45%,70%{fill:#FFF4CC}100%{fill:#DCE8F7}}
+@keyframes bIdeaFil{0%,20%{stroke:#376CB2}45%,70%{stroke:#F5A623}100%{stroke:#376CB2}}
+@keyframes bIdeaRay{0%,25%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:scale(1.15)}70%{opacity:1;transform:scale(1)}90%,100%{opacity:0;transform:scale(.6)}}
+/* 2 줄넘기 */
+.v3-bic-rope .jumper{animation:bJump .9s cubic-bezier(.45,0,.55,1) infinite}
+.v3-bic-rope .rope{transform-origin:50% 0;animation:bRope .9s linear infinite}
+.v3-bic-rope .shadow{opacity:.18;transform-origin:50% 50%;animation:bShadow .9s cubic-bezier(.45,0,.55,1) infinite}
+.v3-bic-rope .legs{transform-origin:50% 0;animation:bLegs .9s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes bJump{0%,100%{transform:translateY(-5px)}50%{transform:translateY(0)}}
+@keyframes bRope{0%{transform:translateY(5px) scaleY(1)}25%{transform:translateY(0) scaleY(0)}50%{transform:translateY(0) scaleY(-1.05)}75%{transform:translateY(0) scaleY(0)}100%{transform:translateY(5px) scaleY(1)}}
+@keyframes bShadow{0%,100%{transform:scale(.6);opacity:.1}50%{transform:scale(1);opacity:.22}}
+@keyframes bLegs{0%,100%{transform:scaleY(.86)}50%{transform:scaleY(1)}}
+/* 3 막대 + 상승선 */
+.v3-bic-bars .b{transform-origin:50% 100%;animation:bBar 3.2s cubic-bezier(.34,1.56,.64,1) infinite}
 .v3-bic-bars .b2{animation-delay:.15s}.v3-bic-bars .b3{animation-delay:.3s}
-@keyframes v3bar{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
-.v3-bic-chat circle{animation:v3dot 1.2s ease-in-out infinite}
-.v3-bic-chat .d2{animation-delay:.2s}.v3-bic-chat .d3{animation-delay:.4s}
-@keyframes v3dot{0%,60%,100%{transform:translateY(0);opacity:.35}30%{transform:translateY(-2.5px);opacity:1}}
-.v3-bic-trophy .cup{transform-origin:50% 100%;animation:v3bounce 1.6s ease-in-out infinite}
-.v3-bic-trophy .spark{transform-origin:50% 50%;animation:v3spark 1.6s ease-in-out infinite}
-@keyframes v3bounce{0%,100%{transform:translateY(0)}40%{transform:translateY(-2px) rotate(-4deg)}60%{transform:translateY(-2px) rotate(4deg)}}
-@keyframes v3spark{0%,100%{transform:scale(.4);opacity:0}50%{transform:scale(1.1);opacity:1}}
-@media(prefers-reduced-motion:reduce){.v3-bic *{animation:none!important}}
+.v3-bic-bars .trend{stroke-dasharray:100;stroke-dashoffset:100;animation:bTrend 3.2s cubic-bezier(.65,0,.35,1) infinite}
+.v3-bic-bars .arrow{opacity:0;animation:bArrow 3.2s ease infinite}
+@keyframes bBar{0%,6%{transform:scaleY(.12)}30%,82%{transform:scaleY(1)}100%{transform:scaleY(.12)}}
+@keyframes bTrend{0%,30%{stroke-dashoffset:100}60%,82%{stroke-dashoffset:0}95%,100%{stroke-dashoffset:-100}}
+@keyframes bArrow{0%,55%{opacity:0;transform:translate(-3px,3px)}65%,82%{opacity:1;transform:none}95%,100%{opacity:0}}
+/* 4 상담 말풍선 */
+.v3-bic-chat .q{transform-origin:0% 100%;animation:bQ 3.4s cubic-bezier(.34,1.56,.64,1) infinite}
+.v3-bic-chat .a{transform-origin:100% 100%;animation:bA 3.4s cubic-bezier(.34,1.56,.64,1) infinite}
+.v3-bic-chat .d{transform-origin:50% 50%;animation:bDot 1s ease-in-out infinite}
+.v3-bic-chat .d2{animation-delay:.15s}.v3-bic-chat .d3{animation-delay:.3s}
+@keyframes bQ{0%{opacity:0;transform:scale(.3)}12%,85%{opacity:1;transform:scale(1)}95%,100%{opacity:0;transform:scale(.9)}}
+@keyframes bA{0%,22%{opacity:0;transform:scale(.3)}36%,85%{opacity:1;transform:scale(1)}95%,100%{opacity:0;transform:scale(.9)}}
+@keyframes bDot{0%,60%,100%{transform:translateY(0);opacity:.55}30%{transform:translateY(-2.5px);opacity:1}}
+/* 5 트로피 */
+.v3-bic-trophy .cup{transform-origin:50% 100%;animation:bCup 2.8s cubic-bezier(.45,0,.55,1) infinite}
+.v3-bic-trophy .shine{animation:bShine 2.8s cubic-bezier(.65,0,.35,1) infinite}
+.v3-bic-trophy .sp{transform-origin:50% 50%;opacity:0;animation:bSpark 2.8s ease-in-out infinite}
+.v3-bic-trophy .sp2{animation-delay:.5s}.v3-bic-trophy .sp3{animation-delay:1s}
+@keyframes bCup{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-2.5px) rotate(-3deg)}60%{transform:translateY(-2.5px) rotate(3deg)}}
+@keyframes bShine{0%,35%{transform:skewX(-18deg) translateX(0)}70%,100%{transform:skewX(-18deg) translateX(34px)}}
+@keyframes bSpark{0%,100%{opacity:0;transform:scale(.2) rotate(0)}40%{opacity:1;transform:scale(1.15) rotate(45deg)}60%{opacity:1;transform:scale(.9) rotate(70deg)}80%{opacity:0;transform:scale(.3) rotate(90deg)}}
+@media(prefers-reduced-motion:reduce){.v3-bic *{animation:none!important}.v3-bic-idea .glow,.v3-bic-idea .r,.v3-bic-bars .arrow,.v3-bic-trophy .sp{opacity:1}.v3-bic-bars .trend{stroke-dashoffset:0}}
 /* P05 Solution 05: 세로로 쌓인 카드 사이 여백 */
 .ct.v3-p05 section.domestic .domestic-cont>.col-md-6>.radius+.radius{margin-top:40px!important}
 /* 카드 호버 A안: 살짝 떠오름 (사이트 전체 카드 그리드·슬라이더) */
