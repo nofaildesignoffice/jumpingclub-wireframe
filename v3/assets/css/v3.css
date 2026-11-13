@@ -632,6 +632,8 @@ footer.ft{border-top:1px solid #e5e5e5}
 .ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top)>section{position:relative;z-index:1;background:transparent!important;padding-top:0!important;padding-bottom:0!important}
 .ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top) :is(.font-title,.v3-st,.h5,.v3-sd){color:#fff!important}
 @media(max-width:991.98px){.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top){background-attachment:scroll!important;padding:100px 0!important}}
+/* P05 유형별 자료 묶음: 본문 폭 1152px (v2와 동일) */
+.contents>.v3-sec:is(:has(.v3-matg),:has(.v3-matg-head)) .contain{max-width:1192px!important;margin-left:auto!important;margin-right:auto!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
