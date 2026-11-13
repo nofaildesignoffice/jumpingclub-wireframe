@@ -607,7 +607,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 .contents>.v3-sec:has(.v3-matg-head)>*{padding-bottom:16px!important;margin-bottom:0!important}
 .contents>.v3-sec:has(.v3-matg){padding:0!important;margin-top:0!important}
 .contents>.v3-sec:has(.v3-matg)>*{margin-top:0!important;padding-top:56px!important;padding-bottom:56px!important}
-.contents>.v3-sec:has(.v3-matg)>.sc>section{padding-top:0!important;padding-bottom:0!important;margin:0!important}
+.contents>.v3-sec:has(.v3-matg)>.sc>section{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}
 .contents>.v3-sec:has(.v3-matg)+.v3-sec:has(.v3-matg)>*{border-top:1px solid #DCE6F2}
 .contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3){font-size:24px!important;display:flex;align-items:center;gap:10px}
 .contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3)::before{content:'';width:4px;height:22px;border-radius:2px;background:var(--primary)}
