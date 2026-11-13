@@ -683,6 +683,9 @@ section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>
 section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important}
 section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important;padding:20px 0 0!important}
 section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radius{border-radius:20px!important;overflow:hidden}
+/* 이미지 아래 텍스트 박스가 붙는 카드: 이미지 하단 좌우 라운딩 제거 */
+.domestic-cont .radius.bg-primary-bg{overflow:hidden}
+.domestic-cont .radius.bg-primary-bg>.img.radius{border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
