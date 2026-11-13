@@ -560,6 +560,9 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* 색 배경 섹션과 헤더·푸터 사이 흰 여백 제거 */
 .contents:has(>.v3-sec:last-child #thumbswiper-2){padding-bottom:0!important}
 .contents>.sc.heart.intro:first-child:has(img[alt="회장 프로필 사진"])+.sc{margin-top:0!important}
+/* P03 가입 등급 카드 배경 투명 */
+.ct .contents .sc.index .v3-gcards.sect5 .sect5Swiper .swiper-slide.swiper-slide>a{background:transparent!important;border-radius:0!important}
+.ct .contents .sc.index .v3-gcards.sect5 .sect5Swiper .swiper-slide.swiper-slide .link{padding:20px 0 0!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
