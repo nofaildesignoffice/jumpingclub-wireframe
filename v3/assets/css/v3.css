@@ -720,6 +720,9 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .ct.v3-p05tv .contents{padding-top:0!important}
 /* P05 Solution 카드: 설명 아래 빈 여백 제거 */
 .ct.v3-p05 section.domestic .domestic-cont dd{min-height:0!important}
+/* P05 유형별 자료 탭: 컨테이너·비활성 버튼 흰색 */
+.ct.v3-p05 .nav-wrap>.nav-pills{background:#fff!important;border-radius:16px}
+.ct.v3-p05 .nav-wrap>.nav-pills .nav-link:not(.active){background:#fff!important;border-radius:16px}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
