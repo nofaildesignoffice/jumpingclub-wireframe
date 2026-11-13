@@ -600,6 +600,32 @@ footer.ft{border-top:1px solid #e5e5e5}
 .ct.v3-p05 .contents>.v3-sec:first-child .sc,.ct.v3-p05 .contents>.v3-sec:first-child section{background:transparent!important;padding-top:0!important;padding-bottom:0!important}
 .ct.v3-p05 .contents>.v3-sec:first-child :is(.font-title,.v3-st,.h5,.v3-sd){color:#fff!important}
 @media(max-width:767.98px){.ct.v3-p05 .contents>.v3-sec:first-child{padding:170px 0 90px}}
+/* P05 유형별 자료: 타이틀 + 영상·자료·로고 3블록을 한 섹션으로 */
+.contents>.v3-sec:has(.v3-matg-head),.contents>.v3-sec:has(.v3-matg){background:#F4F8FD!important}
+.contents>.v3-sec:has(.v3-matg) .sc,.contents>.v3-sec:has(.v3-matg) section{background:transparent!important}
+.contents>.v3-sec:has(.v3-matg-head){padding-bottom:0!important}
+.contents>.v3-sec:has(.v3-matg-head)>*{padding-bottom:16px!important;margin-bottom:0!important}
+.contents>.v3-sec:has(.v3-matg){padding:0!important;margin-top:0!important}
+.contents>.v3-sec:has(.v3-matg)>*{margin-top:0!important;padding-top:56px!important;padding-bottom:56px!important}
+.contents>.v3-sec:has(.v3-matg)>.sc>section{padding-top:0!important;padding-bottom:0!important;margin:0!important}
+.contents>.v3-sec:has(.v3-matg)+.v3-sec:has(.v3-matg)>*{border-top:1px solid #DCE6F2}
+.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3){font-size:24px!important;display:flex;align-items:center;gap:10px}
+.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3)::before{content:'';width:4px;height:22px;border-radius:2px;background:var(--primary)}
+.contents>.v3-sec:has(.v3-matg):not(:has(+.v3-sec .v3-matg))>*{padding-bottom:120px!important}
+/* P05 고민 섹션: 타이틀 위·가운데, 카드 흰 박스 가로 1줄 */
+.contents>.v3-sec section.benefit .contain>.row{flex-direction:column;align-items:stretch}
+.contents>.v3-sec section.benefit .contain>.row>.col-lg{flex:0 0 auto;max-width:100%;width:100%;text-align:center}
+.contents>.v3-sec section.benefit .contain>.row>.col-lg .tit{text-align:center;margin:0 auto 48px}
+.contents>.v3-sec section.benefit .contain>.row>.col-lg .tit .d-flex{justify-content:center}
+.contents>.v3-sec section.benefit .contain>.row>.col-lg-7{flex:0 0 auto;max-width:100%;width:100%;margin:0!important}
+.contents>.v3-sec section.benefit .benefit-cont{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;margin:0!important}
+.contents>.v3-sec section.benefit .benefit-cont>.col-md-6{flex:none;max-width:none;width:auto;padding:32px 24px!important;margin:0!important;background:#fff!important;border:0!important;border-radius:20px;box-shadow:0 8px 24px rgba(22,48,79,.10)}
+@media(max-width:1199.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:767.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:1fr}}
+.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper{padding-bottom:24px!important}
+/* P05 후기 카드 본문 줄바꿈 */
+.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p{white-space:normal!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p+p{margin-top:8px}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
