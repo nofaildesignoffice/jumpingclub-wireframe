@@ -715,6 +715,11 @@ section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radiu
 .ct.v3-p05 .v3-sec:has(.v3-mrow) section.contain>.row>.col-lg-4{padding-bottom:40px!important}
 /* P05 Solution 06 박스: 흰 배경 + 그림자 */
 .ct.v3-p05 .v3-sec:has(.col-lg-9 .badge-circle) .col-lg-9 .box{background:#fff!important;box-shadow:0 8px 24px rgba(22,48,79,.10)!important}
+/* P05: 상단 투명 헤더 (첫 섹션이 헤더 뒤까지 올라감) */
+.v3-tvflag{display:none!important}
+.ct.v3-p05tv .contents{padding-top:0!important}
+/* P05 Solution 카드: 설명 아래 빈 여백 제거 */
+.ct.v3-p05 section.domestic .domestic-cont dd{min-height:0!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
