@@ -626,6 +626,12 @@ footer.ft{border-top:1px solid #e5e5e5}
 /* P05 후기 카드 본문 줄바꿈 */
 .v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p{white-space:normal!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 .v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p+p{margin-top:8px}
+/* P05 "이런 고민을 덜어 드리기 위해" 섹션: 고정 배경 이미지 + 검정 반투명 */
+.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top){position:relative;background:url(../photos/3c7b73.jpg) center/cover no-repeat fixed!important;padding:140px 0!important}
+.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top)::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top)>section{position:relative;z-index:1;background:transparent!important;padding-top:0!important;padding-bottom:0!important}
+.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top) :is(.font-title,.v3-st,.h5,.v3-sd){color:#fff!important}
+@media(max-width:991.98px){.ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top){background-attachment:scroll!important;padding:100px 0!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
