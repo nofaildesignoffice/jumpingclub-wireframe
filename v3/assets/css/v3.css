@@ -894,7 +894,10 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .spacing{display:block!important;min-height:0!important;pointer-events:none}
 .index section.sect2 .contents .tab-cont{overflow:hidden}
 .index section.sect2 .contents .tab-cont div>div,.index section.sect2 .tab-cont>div>div:not(.active){display:block!important}
-.index section.sect2 .contents .tab-cont div>div ul{align-content:flex-start}}
+.index section.sect2 .contents .tab-cont div>div ul{align-content:flex-start}
+.index section.sect2 .contents{display:flex!important;flex-direction:column;justify-content:center}
+.index section.sect2 .contents>.contain{width:100%}
+.index section.sect2 .contents>.cloud{position:absolute}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
