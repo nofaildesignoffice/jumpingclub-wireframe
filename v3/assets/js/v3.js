@@ -65,6 +65,17 @@
       cnt.forEach(function(c){ io.observe(c); });
     }
     $('a[data-toggle="tab"]').on('shown.bs.tab',function(){ if(typeof AOS!=='undefined') AOS.refreshHard(); });
+    /* 모바일 사이드바 메뉴 */
+    function dOpen(v){ $('body').toggleClass('v3-dopen',v); $('.v3-draw').attr('aria-hidden',v?'false':'true'); }
+    document.addEventListener('click',function(e){
+      if(window.innerWidth>=996) return;
+      if(e.target.closest('.btn-gnb-open')){ e.preventDefault(); e.stopImmediatePropagation(); dOpen(!$('body').hasClass('v3-dopen')); }
+    },true);
+    $(document).on('click','.v3-ddim,.v3-draw .dwx',function(){ dOpen(false); });
+    $(document).on('click','.v3-draw .dwtog',function(){ var o=this.getAttribute('aria-expanded')==='true'; this.setAttribute('aria-expanded',o?'false':'true'); $(this).next('.dwsub').prop('hidden',o); });
+    $(document).on('click','.v3-draw a',function(){ dOpen(false); });
+    $(document).on('keydown',function(k){ if(k.key==='Escape') dOpen(false); });
+    $(window).on('resize',function(){ if(window.innerWidth>=996) dOpen(false); });
     /* 영상 카드 → 모달 플레이어 */
     function vClose(){ $('.v3-vmodal').remove(); $('body').removeClass('v3-vm-open'); $(document).off('keydown.vm'); }
     $(document).on('click','a.v3-vid[data-yt]',function(e){

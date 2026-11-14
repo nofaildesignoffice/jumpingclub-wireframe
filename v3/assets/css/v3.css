@@ -940,6 +940,50 @@ body.v3-vm-open{overflow:hidden}
 .v3-qm1>a,.v3-qm1 .v3-q-sns>button{width:50px!important;padding:9px 0!important;gap:3px;font-size:10px!important;border-radius:26px!important}
 .v3-qm1 svg{width:19px;height:19px}
 .v3-qm1 .v3-q-sns>div{right:66px}}
+/* 모바일 헤더: 로고 가운데 · 3선 햄버거 · 로그인/회원가입 아이콘 */
+.v3-hicon,.v3-draw,.v3-ddim{display:none}
+@media(max-width:995.98px){
+header.hd .hd-top{position:relative}
+header.hd .hd-top h1{position:absolute!important;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important}
+header.hd .hd-top .btn-gnb-open{margin:0!important}
+header.hd .hd-top .btn-gnb-open i,header.hd .hd-top .btn-gnb-open::before,header.hd .hd-top .btn-gnb-open::after{left:5px!important;width:22px!important;height:2px!important;border-radius:2px}
+header.hd .hd-top .btn-gnb-open::before{top:9px!important;bottom:auto!important}
+header.hd .hd-top .btn-gnb-open i{top:15px!important}
+header.hd .hd-top .btn-gnb-open::after{top:21px!important;bottom:auto!important}
+header.hd .hd-top .btn-support{display:none!important}
+header.hd .hd-top .v3-hicon{display:grid;place-items:center;width:36px;height:36px;color:#fff;flex:none}
+header.hd .hd-top .btn-support+.v3-hicon{margin-left:auto!important}header.hd .hd-top .v3-hicon+.v3-hicon{margin-left:2px!important;margin-right:-6px}
+body.is-scroll header.hd .hd-top .v3-hicon,body.gnb-open header.hd .hd-top .v3-hicon,body:not(:has(.top-visual)) header.hd .hd-top .v3-hicon{color:#333}
+.v3-ddim{display:block;position:fixed;inset:0;z-index:1190;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .28s,visibility .28s}
+body.v3-dopen{overflow:hidden}
+body.v3-dopen .v3-ddim{opacity:1;visibility:visible}
+.v3-draw{display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;width:86vw;max-width:360px;z-index:1200;background:#fff;padding:22px 20px 32px;overflow-y:auto;transform:translateX(-100%);visibility:hidden;transition:transform .28s cubic-bezier(.22,.61,.36,1),visibility .28s;color:#1A1A1A;font-size:15px}
+body.v3-dopen .v3-draw{transform:none;visibility:visible}
+.v3-draw .dwx{position:absolute;right:14px;top:14px;width:32px;height:32px;border:0;background:none;cursor:pointer}
+.v3-draw .dwx::before,.v3-draw .dwx::after{content:'';position:absolute;left:7px;top:15px;width:18px;height:2px;background:#1A1A1A;transform:rotate(45deg)}
+.v3-draw .dwx::after{transform:rotate(-45deg)}
+.v3-draw .dwmsg{font-size:13.5px;color:#666;margin:0 0 12px}
+.v3-draw .dwbtns{display:flex;gap:8px}
+.v3-draw .dwbtn{flex:1;display:inline-flex;align-items:center;justify-content:center;height:44px;font-size:13.5px;font-weight:600;border:1px solid #1A1A1A;border-radius:8px;background:#fff;color:#1A1A1A}
+.v3-draw .dwlist{display:flex;flex-direction:column;margin-top:22px}
+.v3-draw .dwlist>a,.v3-draw .dwtog{display:flex;align-items:center;justify-content:space-between;width:100%;padding:13px 0;font-size:15px;font-weight:600;color:#1A1A1A;background:none;border:0;text-align:left;cursor:pointer;font-family:inherit}
+.v3-draw .dwtog::after{content:"+";font-size:19px;line-height:1;font-weight:400;color:#999}
+.v3-draw .dwtog[aria-expanded="true"]::after{content:"−"}
+.v3-draw .dwsub{display:flex;flex-direction:column;padding:2px 0 10px}
+.v3-draw .dwsub[hidden]{display:none}
+.v3-draw .dwsub a{padding:9px 0 9px 12px;font-size:13.5px;color:#666}
+.v3-draw .dwline{border:0;border-top:1px solid #E0E0E0;margin:18px 0;opacity:1}
+.v3-draw .dwcs h3{font-size:14px;font-weight:700;margin:0 0 12px}
+.v3-draw .dwtel{margin:0;font-size:17px;font-weight:800;letter-spacing:-.02em}
+.v3-draw .dwhour{margin:3px 0 14px;font-size:12px;color:#999}
+.v3-draw .dwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.v3-draw .dwgrid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;aspect-ratio:1/1;border:1px solid #E0E0E0;border-radius:12px;font-size:12px;color:#666;text-align:center;line-height:1.35}
+.v3-draw .dwgrid a svg{color:#1A1A1A;opacity:.75}
+.v3-draw .dwfoot{margin-top:auto;padding-top:28px}
+.v3-draw .dwlogo{display:block;width:115px;height:auto}
+.v3-draw .dwcr{margin:10px 0 0;font-size:10.5px;color:#999;letter-spacing:.02em}
+header.hd .gnb-menu{display:none!important}
+}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
