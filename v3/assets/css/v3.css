@@ -979,8 +979,8 @@ body.v3-dopen .v3-draw{transform:none;visibility:visible}
 .v3-draw .dwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .v3-draw .dwgrid a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;aspect-ratio:1/1;border:1px solid #E0E0E0;border-radius:12px;font-size:12px;color:#666;text-align:center;line-height:1.35}
 .v3-draw .dwgrid a svg{color:#1A1A1A;opacity:.75}
-.v3-draw .dwwide{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;height:52px;border:1px solid #E0E0E0;border-radius:12px;font-size:13px;font-weight:600;color:#1A1A1A}
-.v3-draw .dwwide svg{opacity:.75}
+.v3-draw .dwwide{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;height:52px;border:1px solid var(--primary);border-radius:12px;font-size:13px;font-weight:600;background:var(--primary);color:#fff!important}
+.v3-draw .dwwide svg{color:#fff}
 .v3-draw .dwfoot{margin-top:auto;padding-top:28px}
 .v3-draw .dwlogo{display:block;width:115px;height:auto}
 .v3-draw .dwcr{margin:10px 0 0;font-size:10.5px;color:#999;letter-spacing:.02em}
@@ -1038,6 +1038,20 @@ header.hd .gnb-menu{display:none!important}
 .v3-table th:not(:first-child),.v3-table td.c{width:54px!important}
 .v3-table td{padding:12px 6px!important;font-size:13px;line-height:1.4;word-break:keep-all}
 .v3-table td.c{padding:12px 2px!important}}
+/* 모바일: 게시판 카테고리 가로 1줄 스와이프 */
+@media(max-width:767.98px){.v3-bbar .nav-wrap{width:100%;min-width:0;overflow:hidden;margin-right:calc(-1 * var(--v3-gut))}
+.ct .board .v3-bbar .nav-wrap ul.nav.nav-cate{flex-wrap:nowrap!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:18px!important;padding-right:var(--v3-gut);row-gap:0!important}
+.v3-bbar .nav-cate::-webkit-scrollbar{display:none}
+.v3-bbar .nav-cate>li{flex:none;margin:0!important}
+.v3-bbar .nav-cate a{white-space:nowrap}}
+/* P08 자료 목록 모바일: 제목 위, 번호·날짜 아래 한 줄 */
+@media(max-width:767.98px){.board .board-list.v3-t3>li.v3-head{display:none!important}
+.board .board-list.v3-t3>li{display:flex!important;flex-direction:row!important;justify-content:flex-start!important;align-items:center!important;flex-wrap:wrap!important;align-items:center;gap:6px 0;padding:16px 4px!important}
+.board .board-list.v3-t3>li>p{margin:0!important;padding:0!important;width:auto!important;flex:none;font-size:12.5px;color:#999;text-align:left!important}
+.board .board-list.v3-t3>li>p.subject{order:-1;flex:0 0 100%!important;width:100%!important;display:block!important;color:#222}
+.board .board-list.v3-t3>li>p.subject .h5{font-size:15px;line-height:1.45}
+.board .board-list.v3-t3>li>p.no::before{content:'No. '}
+.board .board-list.v3-t3>li>p.date::before{content:'';display:inline-block;width:1px;height:10px;background:#ddd;margin:0 10px;vertical-align:0}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
