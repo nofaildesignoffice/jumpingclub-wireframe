@@ -887,6 +887,14 @@ header.hd .v3-nolink{cursor:default}
 .si-job .sp{animation:si-spark 2s ease-in-out infinite}.si-job .s2{animation-delay:1s}
 @keyframes si-spark{0%,100%{transform:scale(.4);opacity:0}50%{transform:scale(1);opacity:1}}
 @media(prefers-reduced-motion:reduce){.v3-si2 *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+/* sect2 스크롤 롤링 v2: PC·모바일 공통 */
+.index section.sect2 .contents::before{transition:opacity .15s linear}
+@media(min-width:996px){.index section.sect2 .spacing{min-height:0!important}}
+@media(max-width:995.98px){.index section.sect2 .contents{position:sticky!important;overflow:hidden;padding-bottom:40px!important}
+.index section.sect2 .spacing{display:block!important;min-height:0!important;pointer-events:none}
+.index section.sect2 .contents .tab-cont{overflow:hidden}
+.index section.sect2 .contents .tab-cont div>div,.index section.sect2 .tab-cont>div>div:not(.active){display:block!important}
+.index section.sect2 .contents .tab-cont div>div ul{align-content:flex-start}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}

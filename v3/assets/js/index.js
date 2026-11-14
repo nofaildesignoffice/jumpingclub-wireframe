@@ -231,3 +231,47 @@ function sect3slide(){
         });
     } 
 }
+/* v3: sect2 스크롤 롤링 — PC·모바일 공통, 배경 전환을 앞당김 */
+var S2 = {pre: 60, post: 260, maxT: 0, start: 0};
+function s2Layout(){
+    var $s = $('.index section.sect2'); if(!$s.length) return;
+    var $c = $s.find('.contents'), $tc = $s.find('.tab-cont'), $d = $tc.children('div'), $p = $d.children('div');
+    var mob = window.innerWidth < 996;
+    $p.css({height: '', minHeight: ''}); $tc.css('height', '');
+    var H;
+    if (mob) {
+        H = 0; $p.each(function(){ H = Math.max(H, $(this).outerHeight()); });
+        $p.css('height', H + 'px'); $tc.css('height', H + 'px');
+    } else { H = $tc.height(); }
+    S2.maxT = Math.max(0, $d.outerHeight() - H);
+    var vh = window.innerHeight, ch = $c.outerHeight();
+    var top = Math.min(0, vh - ch);
+    $c.css('top', top + 'px');
+    $s.find('.spacing').each(function(){ this.style.setProperty('height', (S2.pre + S2.maxT + S2.post) + 'px', 'important'); });
+    S2.start = $s.offset().top - top;
+}
+function sect2Scroll(){
+    var $s = $('.index section.sect2'); if(!$s.length) return;
+    var d = $(window).scrollTop() - S2.start - S2.pre;
+    var t = Math.max(0, Math.min(S2.maxT, d));
+    $s.find('.tab-cont>div').css('transform', 'translateY(-' + t + 'px)');
+    var on2 = d >= S2.maxT * 0.45;
+    var $a = $s.find('.tab-link a');
+    $a.eq(0).toggleClass('on', !on2); $a.eq(1).toggleClass('on', on2);
+    var wb = $(window).scrollTop() + window.innerHeight;
+    $s.find('.tab-cont li').each(function(){
+        var r = this.getBoundingClientRect();
+        if (r.bottom <= window.innerHeight && r.top >= 0) {
+            if (!$(this).hasClass('counting')) { $(this).addClass('counting'); countAction($(this)); }
+        } else if (r.top > window.innerHeight) { $(this).removeClass('counting'); }
+    });
+}
+$(function(){
+    $('.sect2 .tab-link a').off('click').on('click', function(e){
+        e.preventDefault(); e.stopPropagation();
+        var i = $('.sect2 .tab-link a').index(this);
+        $('html, body').animate({scrollTop: S2.start + S2.pre + (i ? S2.maxT : 0) + 2}, 250);
+    });
+    s2Layout(); sect2Scroll();
+});
+$(window).on('load resize', function(){ s2Layout(); sect2Scroll(); });
