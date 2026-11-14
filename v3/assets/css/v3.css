@@ -986,6 +986,58 @@ body.v3-dopen .v3-draw{transform:none;visibility:visible}
 .v3-draw .dwcr{margin:10px 0 0;font-size:10.5px;color:#999;letter-spacing:.02em}
 header.hd .gnb-menu{display:none!important}
 }
+/* 모바일: 서브메뉴 탭 균등 분할 */
+@media(max-width:995.98px){.ct .sub-menu .nav{flex:1 1 auto!important;width:100%!important;max-width:none!important}
+.ct .sub-menu .nav>a{flex:1 1 0!important;width:auto!important;max-width:none!important;min-width:0;justify-content:center;text-align:center}}
+/* 모바일: 협회 로고 박스 — 로고 위, 텍스트 아래, 가운데 */
+@media(max-width:995.98px){.ct .sect3-mo .swiper-slide>div{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;gap:12px}
+.ct .sect3-mo .swiper-slide>div>.logo{order:-1;margin:0!important;display:flex;justify-content:center}
+.ct .sect3-mo .swiper-slide>div>p:not(.logo){margin:0!important}}
+/* P02 연혁 모바일: 연도 탭 스크롤바 제거 · 여백 */
+@media(max-width:995.98px){.heart.intro .history-progress{overflow:hidden!important}
+.heart.intro .history-progress .nav{gap:8px!important;justify-content:space-between!important;font-size:17px!important;padding-top:18px!important;padding-bottom:18px!important}
+.heart.intro .history-progress .nav a:last-child{padding-right:0!important}
+.heart.intro .history-wrap-area .history-cont-wrap .cont-list .cont-item-right{padding-top:64px!important;padding-bottom:88px!important}
+.heart.intro .history-wrap-area .history-cont-wrap .cont-list .cont-item-right dl+dl{margin-top:48px!important}
+.heart.intro .history-wrap-area .history-cont-wrap .cont-list .cont-item-right dl dt{margin-bottom:16px!important}
+.heart.intro .history-wrap-area .history-cont-wrap .cont-list .cont-item-right dl dd+dd{margin-top:12px!important}}
+/* 모바일: 서브메뉴 스크롤바 제거 */
+@media(max-width:995.98px){.ct .sub-menu{overflow:hidden!important}
+.ct .sub-menu .nav{overflow:hidden!important;flex-wrap:nowrap!important}
+.ct .sub-menu .nav>a{padding-left:6px!important;padding-right:6px!important;white-space:nowrap}}
+/* P02 위치 섹션 모바일 아래 여백 · 푸터 위 흰 여백 제거 */
+.contents:has(>.sc.heart:last-child>.v3-dir){padding-bottom:0!important}
+@media(max-width:995.98px){.contents>.sc.heart:has(>.v3-dir){height:auto!important;padding-bottom:80px!important}}
+/* P03 수상 내역 모바일: 카드 슬라이더(1.2장) */
+@media(max-width:767.98px){.v3-awg{flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:16px;margin-left:0!important;margin-right:calc(-1 * var(--v3-gut))!important;padding-right:var(--v3-gut)!important;row-gap:0}
+.v3-awg::-webkit-scrollbar{display:none}
+.v3-awg>li{flex:0 0 calc((100% - 16px) / 1.2)!important;max-width:none!important;padding:0!important;scroll-snap-align:start}}
+/* 모바일: 서브메뉴 탭 최소폭 해제 */
+@media(max-width:995.98px){.ct .sub-menu .nav>a{min-width:0!important}}
+/* 모바일: Q&A — 아이콘과 질문/답변 한 줄 */
+@media(max-width:995.98px){.board-qna li .qna-q,.board-qna li .qna-a{flex-wrap:nowrap!important;gap:12px}
+.board-qna .qna-q .subject{width:auto!important;flex:1 1 0;min-width:0}
+.board-qna li [class^=qna-]>.badge{flex:none}}
+/* P03 원형 3개 모바일: 가로형 */
+@media(max-width:767.98px){.business.anc .orchestra .circle-bx{flex-direction:row!important;border-radius:999px!important;width:100%!important;max-width:100%;box-sizing:border-box;padding:8px!important;gap:6px}
+.business.anc .orchestra .circle-bx .circle{flex:1 1 0;min-width:0;margin:0!important}
+.business.anc .orchestra .circle-bx .circle-inner{width:100%!important;height:auto!important;aspect-ratio:1/1;padding:6px!important;gap:2px}
+.business.anc .orchestra .circle-bx .v3-cnum{font-size:17px}
+.business.anc .orchestra .circle-bx .circle-inner span{font-size:10.5px;line-height:1.35;padding:0}}
+/* P05 자료 카드 모바일: 한 줄 2개 */
+@media(max-width:767.98px){.oversea-cont.v3-mat .row{margin-left:-6px!important;margin-right:-6px!important;row-gap:16px}
+.oversea-cont.v3-mat .row>[class*="col-"]{flex:0 0 50%!important;max-width:50%!important;padding-left:6px!important;padding-right:6px!important}
+.oversea-cont.v3-mat .radius .box{padding:14px 12px!important}
+.oversea-cont.v3-mat .radius dt{font-size:15px!important;line-height:1.35}
+.oversea-cont.v3-mat .radius dd{font-size:12.5px!important;line-height:1.45}}
+/* P05 비교표 모바일: 스와이프 없이 한 화면 */
+@media(max-width:767.98px){.v3-table-wrap{overflow:visible!important}
+.v3-table{min-width:0!important;table-layout:fixed}
+.v3-table th{font-size:13px!important;padding:12px 2px!important}
+.v3-table th:first-child{width:auto}
+.v3-table th:not(:first-child),.v3-table td.c{width:54px!important}
+.v3-table td{padding:12px 6px!important;font-size:13px;line-height:1.4;word-break:keep-all}
+.v3-table td.c{padding:12px 2px!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
