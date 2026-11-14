@@ -838,6 +838,16 @@ header.hd .v3-nolink{cursor:default}
 /* 몰·활동 목록 카드: 흰 카드 안쪽 여백 */
 .ct ul.row>li>a>.cont{padding:20px 22px 24px!important}
 .ct ul.row>li>a>.img,.ct ul.row>li>a>.img img{border-radius:0!important}
+/* P11 몰 상품 카드 */
+.board-gallery .v3-mall-img{background:#fff;border-bottom:1px solid #eef1f5}
+.board-gallery .v3-mall-img img{object-fit:contain!important}
+.v3-mall-cat{font-size:13px;font-weight:700;color:var(--primary,#376CB2);margin:0 0 6px}
+.board-gallery .cont .h5{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.v3-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:14px 0 0}
+.v3-price em{font-style:normal;font-weight:800;font-size:18px;color:#e9451a}
+.v3-price b{font-weight:800;font-size:20px;color:#222}.v3-price b small{font-size:14px;font-weight:600;margin-left:1px}
+.v3-price del{font-size:14px;color:#999}
+@media(max-width:575px){.v3-price em{font-size:15px}.v3-price b{font-size:17px}.v3-price del{font-size:12px}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
