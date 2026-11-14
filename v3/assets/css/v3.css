@@ -560,6 +560,12 @@ footer.ft{border-top:1px solid #e5e5e5}
 .contents>.v3-sec:has(img[alt="유소년 수업"]){background:#fff!important}
 .contents>.v3-sec:has(.v3-cur),.contents>.v3-sec:has(.recruit-process){background:#F7F7F8!important}
 .contents>.v3-sec:has(.v3-cur) .sc,.contents>.v3-sec:has(.v3-cur) section,.contents>.v3-sec:has(.recruit-process) .sc,.contents>.v3-sec:has(.recruit-process) .process,.contents>.v3-sec:has(.recruit-process) section{background-color:transparent!important}
+/* P03 섹션 배경 지정 */
+.contents>.v3-sec:has(.v3-awg){background:#EEF3FA!important}
+.contents>.v3-sec:has(img[alt="급수 수업 장면"]){background:#fff!important}
+.contents>.v3-sec:has(img[alt="유소년 수업"]){background:#F7F7F8!important}
+.contents>.v3-sec:has(.v3-cur){background:#fff!important}
+.contents>.v3-sec:has(.v3-awg) section,.contents>.v3-sec:has(img[alt="급수 수업 장면"]) .sc,.contents>.v3-sec:has(img[alt="급수 수업 장면"]) section,.contents>.v3-sec:has(img[alt="유소년 수업"]) .sc,.contents>.v3-sec:has(img[alt="유소년 수업"]) section{background:transparent!important}
 /* 인사말 섹션 위아래 여백 */
 .contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:120px 0!important}
 @media(max-width:767.98px){.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:80px 0!important}}
