@@ -915,6 +915,8 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .contents .tab-cont div>div ul li .desc{flex:1 1 0;min-width:0;margin:0;font-weight:700}
 .index section.sect2 .contents .tab-cont div>div ul li p:last-child{margin:0!important;flex:none;text-align:right;white-space:nowrap}
 .index section.sect2 .contents .tab-cont div>div ul li .cnt{font-size:40px;line-height:1}}
+/* 메인 히어로 모바일 높이 고정 (아이폰 사파리 화면 높이 기준) */
+@media(max-width:575.98px){.index .topSwiper{height:660px!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
