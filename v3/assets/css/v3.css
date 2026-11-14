@@ -917,6 +917,25 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .contents .tab-cont div>div ul li .cnt{font-size:40px;line-height:1}}
 /* 메인 히어로 모바일 높이 고정 (아이폰 사파리 화면 높이 기준) */
 @media(max-width:575.98px){.index .topSwiper{height:660px!important}}
+/* 영상 모달 */
+body.v3-vm-open{overflow:hidden}
+.v3-vmodal{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:16px;animation:v3vm .25s ease}
+@keyframes v3vm{from{opacity:0}to{opacity:1}}
+.v3-vm-box{position:relative;width:min(1080px,100%)}
+.v3-vm-frame{position:relative;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
+.v3-vm-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.v3-vm-x{position:absolute;right:0;top:-52px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.14);cursor:pointer}
+.v3-vm-x::before,.v3-vm-x::after{content:'';position:absolute;left:50%;top:50%;width:18px;height:2px;background:#fff;transform:translate(-50%,-50%) rotate(45deg)}
+.v3-vm-x::after{transform:translate(-50%,-50%) rotate(-45deg)}
+.v3-vm-x:hover{background:rgba(255,255,255,.28)}
+/* P02 탭 버튼: 연한 회색 컨테이너 */
+.v3-tg-nav{background:#F2F3F5;border-bottom:0!important;padding:8px;gap:8px;border-radius:22px}
+.v3-tg-nav .nav-link:not(.active){background:#E4E6EA}
+@media(max-width:767.98px){.v3-tg-nav{padding:6px;gap:6px;border-radius:16px}}
+/* P02 위치 섹션 배경 */
+.contents>.sc.heart:has(>.v3-dir){background:#EEF3FA}
+/* 서브 페이지: 상단 비주얼 아래 흰 여백 제거 */
+.ct:not(.index):not(.v3-nohero):has(>.top-visual.sub)>.contents{padding-top:0!important}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
