@@ -897,7 +897,23 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .contents .tab-cont div>div ul{align-content:flex-start}
 .index section.sect2 .contents{display:flex!important;flex-direction:column;justify-content:center}
 .index section.sect2 .contents>.contain{width:100%}
-.index section.sect2 .contents>.cloud{position:absolute}}
+.index section.sect2 .contents>.cloud{position:absolute}
+.index section.sect2 .contents .sect2-head{display:flex;flex-direction:column}
+.index section.sect2 .contents .sect2-head>.d-flex{display:contents!important}
+.index section.sect2 .contents .sect2-head>.d-flex>div{order:1}
+.index section.sect2 .contents .sect2-head h2{margin:8px 0 16px!important}
+.index section.sect2 .contents .sect2-head>div:last-child{order:2;display:block!important}
+.index section.sect2 .contents .sect2-head>.d-flex>p.d-lg-none{order:3;margin:24px 0 0}
+.index section.sect2 .contents .sect2-head .btn-big-support{white-space:nowrap;width:auto}
+.index section.sect2 .contents .tab-wrap{margin-top:36px!important}
+.index section.sect2 .contents .tab-wrap .tab-link{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:12px;margin-bottom:20px}
+.index section.sect2 .contents .tab-wrap .tab-link li{margin:0}
+.index section.sect2 .contents .tab-cont div>div ul{display:block!important}
+.index section.sect2 .contents .tab-cont div>div ul li{width:100%!important;flex-direction:row!important;align-items:center;gap:16px;padding:18px 0;margin:0}
+.index section.sect2 .contents .tab-cont div>div ul li i[class^=icon-biz]{flex:0 0 32px;width:32px;height:32px;margin:0}
+.index section.sect2 .contents .tab-cont div>div ul li .desc{flex:1 1 0;min-width:0;margin:0;font-weight:700}
+.index section.sect2 .contents .tab-cont div>div ul li p:last-child{margin:0!important;flex:none;text-align:right;white-space:nowrap}
+.index section.sect2 .contents .tab-cont div>div ul li .cnt{font-size:40px;line-height:1}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
