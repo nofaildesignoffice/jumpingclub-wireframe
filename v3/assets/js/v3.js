@@ -67,10 +67,9 @@
     $('a[data-toggle="tab"]').on('shown.bs.tab',function(){ if(typeof AOS!=='undefined') AOS.refreshHard(); });
     /* 영상 카드 → 모달 플레이어 */
     function vClose(){ $('.v3-vmodal').remove(); $('body').removeClass('v3-vm-open'); $(document).off('keydown.vm'); }
-    $(document).on('click','a.v3-vid[data-vidx]',function(e){
-      var m=(this.getAttribute('href')||'').match(/channel[/]UC([A-Za-z0-9_-]+)/); if(!m) return;
+    $(document).on('click','a.v3-vid[data-yt]',function(e){
       e.preventDefault();
-      var src='https://www.youtube.com/embed/videoseries?list=UU'+m[1]+'&index='+this.getAttribute('data-vidx')+'&autoplay=1&rel=0';
+      var src='https://www.youtube.com/embed/'+this.getAttribute('data-yt')+'?autoplay=1&rel=0&playsinline=1';
       var t=$(this).find('.h5').text();
       vClose();
       $('body').addClass('v3-vm-open').append('<div class="v3-vmodal" role="dialog" aria-modal="true" aria-label="'+t+'"><div class="v3-vm-box"><button type="button" class="v3-vm-x" aria-label="닫기"></button><div class="v3-vm-frame"><iframe src="'+src+'" title="'+t+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div></div></div>');
