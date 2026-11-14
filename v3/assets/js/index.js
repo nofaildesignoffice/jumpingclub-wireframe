@@ -244,6 +244,7 @@ function s2Layout(){
         $p.css('height', H + 'px'); $tc.css('height', H + 'px');
     } else { H = $tc.height(); }
     S2.maxT = Math.max(0, $d.outerHeight() - H);
+    $c.css('min-height', mob ? window.innerHeight + 'px' : '');
     var vh = window.innerHeight, ch = $c.outerHeight();
     var top = Math.min(0, vh - ch);
     $c.css('top', top + 'px');
