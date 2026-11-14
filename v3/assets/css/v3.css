@@ -854,6 +854,39 @@ header.hd .v3-nolink{cursor:default}
 .v3-price b{font-weight:800;font-size:20px;color:#222}.v3-price b small{font-size:14px;font-weight:600;margin-left:1px}
 .v3-price del{font-size:14px;color:#999}
 @media(max-width:575px){.v3-price em{font-size:15px}.v3-price b{font-size:17px}.v3-price del{font-size:12px}}
+
+/* P06 라인 애니메이션 아이콘 */
+.v3-si2{display:block;width:56px;height:56px;color:var(--primary);--sf:#E6EEF9;overflow:visible}
+.icon-bx .v3-si2{width:48px;height:48px}
+.step.last .v3-si2{color:#fff;--sf:rgba(255,255,255,.16)}
+.step.last .v3-si2 [fill="#fff"]{fill:var(--primary)}
+.v3-si2 *{transform-box:fill-box;transform-origin:center}
+.si-apply .d{stroke-dasharray:20;stroke-dashoffset:20;animation:si-draw 3.6s ease-in-out infinite}
+.si-apply .d2{animation-delay:.4s}.si-apply .d3{animation-delay:.8s}
+.si-apply .pen{animation:si-pen 3.6s ease-in-out infinite}
+@keyframes si-draw{0%{stroke-dashoffset:20}30%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes si-pen{0%,100%{transform:translate(0,0)}25%{transform:translate(-3px,-2px)}50%{transform:translate(-1px,1px)}75%{transform:translate(-4px,0)}}
+.si-pay .coin{animation:si-coin 2.4s cubic-bezier(.3,.6,.3,1) infinite}
+.si-pay .card{animation:si-card 2.4s ease-in-out infinite}
+@keyframes si-coin{0%{transform:translateY(-10px);opacity:0}30%{transform:translateY(0);opacity:1}40%{transform:translateY(-2px)}50%,85%{transform:translateY(0);opacity:1}100%{opacity:0}}
+@keyframes si-card{0%,100%{transform:translateX(0)}50%{transform:translateX(-1.5px)}}
+.si-attend .jp{animation:si-hop .9s ease-in-out infinite}
+.si-attend .r1{animation:si-r1 .9s steps(1) infinite}.si-attend .r2{animation:si-r2 .9s steps(1) infinite}
+@keyframes si-hop{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes si-r1{0%{opacity:1}50%{opacity:0}}
+@keyframes si-r2{0%{opacity:0}50%{opacity:1}}
+.si-cert .rib{transform-origin:50% 0;animation:si-sway 2.4s ease-in-out infinite}
+.si-cert .st{animation:si-twinkle 2.4s ease-in-out infinite}
+@keyframes si-sway{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+@keyframes si-twinkle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.25) rotate(36deg)}}
+.si-skill .up{animation:si-up 2.2s ease-in-out infinite}
+@keyframes si-up{0%{transform:translate(-3px,3px);opacity:0}30%{opacity:1}70%{transform:translate(2px,-2px);opacity:1}100%{transform:translate(3px,-3px);opacity:0}}
+.si-talk .dt{animation:si-dot 1.4s ease-in-out infinite}
+.si-talk .t2{animation-delay:.2s}.si-talk .t3{animation-delay:.4s}
+@keyframes si-dot{0%,60%,100%{transform:translateY(0);opacity:.35}30%{transform:translateY(-2px);opacity:1}}
+.si-job .sp{animation:si-spark 2s ease-in-out infinite}.si-job .s2{animation-delay:1s}
+@keyframes si-spark{0%,100%{transform:scale(.4);opacity:0}50%{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.v3-si2 *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
