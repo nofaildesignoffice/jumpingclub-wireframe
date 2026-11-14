@@ -908,6 +908,7 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .contents .tab-wrap{margin-top:36px!important}
 .index section.sect2 .contents .tab-wrap .tab-link{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:12px;margin-bottom:20px}
 .index section.sect2 .contents .tab-wrap .tab-link li{margin:0}
+.index section.sect2 .contents .tab-link li a,.index section.sect2 .contents .tab-link li a.on{border:0!important;padding:0!important;border-radius:0!important;font-size:20px}
 .index section.sect2 .contents .tab-cont div>div ul{display:block!important}
 .index section.sect2 .contents .tab-cont div>div ul li{width:100%!important;flex-direction:row!important;align-items:center;gap:16px;padding:18px 0;margin:0}
 .index section.sect2 .contents .tab-cont div>div ul li i[class^=icon-biz]{flex:0 0 32px;width:32px;height:32px;margin:0}
