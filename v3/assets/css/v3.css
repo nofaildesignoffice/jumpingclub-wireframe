@@ -1058,6 +1058,32 @@ header.hd .gnb-menu{display:none!important}
 @media(max-width:767.98px){.ct .v3-bbar .nav-wrap ul.nav.nav-cate{overflow-y:hidden!important;touch-action:pan-x;overscroll-behavior-x:contain;padding-bottom:2px;gap:16px!important}
 .ct .v3-bbar .nav-wrap ul.nav.nav-cate a{font-size:15px!important;font-weight:500!important;line-height:1.6}
 .ct .v3-bbar .nav-wrap ul.nav.nav-cate a.on{font-weight:700!important}}
+/* 모바일 게시판 검색: 화면 밖으로 넘침 방지 */
+@media(max-width:991.98px){.v3-bform{width:100%!important;max-width:100%;min-width:0}
+.v3-bform .board-search.v3-sbox{flex:1 1 0!important;min-width:0!important;width:auto!important;max-width:none!important}
+.v3-bform .board-search.v3-sbox input{width:100%!important;min-width:0!important}}
+/* 모바일 점검: 모든 카테고리 줄 가로 스와이프 */
+@media(max-width:767.98px){.ct .nav-wrap{min-width:0;max-width:100%;overflow:hidden}
+.ct .nav-wrap ul.nav.nav-cate{flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;touch-action:pan-x;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:16px!important;row-gap:0!important;padding-bottom:2px}
+.ct .nav-wrap ul.nav.nav-cate::-webkit-scrollbar{display:none}
+.ct .nav-wrap ul.nav.nav-cate>li{flex:none;margin:0!important}
+.ct .nav-wrap ul.nav.nav-cate a{white-space:nowrap;font-size:15px!important;font-weight:500!important;line-height:1.6}
+.ct .nav-wrap ul.nav.nav-cate a.on{font-weight:700!important}}
+/* 모바일 점검: 카테고리 칩이 있는 Q&A — 칩 위, 질문 아래 */
+@media(max-width:995.98px){.board-qna li .qna-q:has(.badge-square){display:grid!important;grid-template-columns:auto minmax(0,1fr);column-gap:12px;row-gap:6px;align-items:center}
+.board-qna li .qna-q:has(.badge-square)>.badge-circle{grid-row:1 / 3;grid-column:1}
+.board-qna li .qna-q:has(.badge-square)>.badge-square{grid-column:2;justify-self:start}
+.board-qna li .qna-q:has(.badge-square)>.subject{grid-column:2}}
+/* 모바일 점검: P02 탭 4개 — 2x2 */
+@media(max-width:767.98px){.v3-tg-nav{display:grid!important;grid-template-columns:1fr 1fr;overflow:visible!important}
+.v3-tg-nav .nav-link{white-space:normal!important;font-size:15px!important;padding:12px 8px!important}}
+/* 모바일 점검: P09 구인 목록 — 제목 위, 정보 아래 한 줄 */
+@media(max-width:991px){.board .board-list.v3-t6>li:not(.v3-head){flex-direction:row!important;flex-wrap:wrap;align-items:center;gap:6px 0!important;padding:16px 4px!important}
+.board .board-list.v3-t6>li>p{margin:0!important;font-size:12.5px;color:#999;flex:none}
+.board .board-list.v3-t6>li>p.sb{order:-1;flex:0 0 100%;color:#222}
+.board .board-list.v3-t6>li>p.sb .h5{font-size:15px;line-height:1.45}
+.board .board-list.v3-t6>li>p:first-child{color:var(--primary);font-weight:600}
+.board .board-list.v3-t6>li>p:not(.sb):not(:first-child)::before{content:'';display:inline-block;width:1px;height:10px;background:#ddd;margin:0 8px;vertical-align:0}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
