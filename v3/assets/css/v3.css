@@ -1052,6 +1052,8 @@ header.hd .gnb-menu{display:none!important}
 .board .board-list.v3-t3>li>p.subject .h5{font-size:15px;line-height:1.45}
 .board .board-list.v3-t3>li>p.no::before{content:'No. '}
 .board .board-list.v3-t3>li>p.date::before{content:'';display:inline-block;width:1px;height:10px;background:#ddd;margin:0 10px;vertical-align:0}}
+/* 메인 히어로 모바일 오버레이: 반투명 검정 (PC와 동일) */
+@media(max-width:995.98px){.index .topSwiper .swiper-slide::after{background:rgba(0,0,0,.5)!important}}
 /* 교육목표 스크롤 카드 */
 .sc .v3-goal{position:relative;height:300vh;padding:0}
 .v3-goal-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
