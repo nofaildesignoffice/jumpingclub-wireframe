@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=P03-jumpingclub.html#level"><link rel="canonical" href="P03-jumpingclub.html#level"><title>점핑클럽이란?</title></head><body><a href="P03-jumpingclub.html#level">인증급수·주니어마스터 안내는 점핑클럽이란? 페이지로 이동했습니다.</a><script>document.querySelectorAll('[data-gal]').forEach(function(g){var s=g.querySelectorAll('.gal-slide'),d=g.querySelector('.gal-dots'),i=0;
+ s.forEach(function(_,k){var b=document.createElement('button');b.setAttribute('aria-label',(k+1)+'번째');b.onclick=function(){go(k)};d.appendChild(b)});
+ function go(n){i=(n+s.length)%s.length;s.forEach(function(x,k){x.classList.toggle('on',k===i)});d.querySelectorAll('button').forEach(function(x,k){x.classList.toggle('on',k===i)})}
+ g.querySelector('.gal-prev').onclick=function(){go(i-1)};g.querySelector('.gal-next').onclick=function(){go(i+1)};go(0)});
+document.querySelectorAll('[data-sub]').forEach(function(w){var t=w.querySelectorAll('.subtabs button'),p=w.querySelectorAll('.subpanel');t.forEach(function(b,k){b.onclick=function(){t.forEach(function(x){x.classList.remove('on')});p.forEach(function(x){x.classList.remove('on')});b.classList.add('on');p[k].classList.add('on')}})});
+document.querySelectorAll('[data-filter]').forEach(function(bar){var tabs=bar.querySelectorAll('.tab[data-f]'),root=bar.closest('.container');
+ function pick(f){tabs.forEach(function(t){t.classList.toggle('on',t.dataset.f===f)});root.querySelectorAll('[data-cat]').forEach(function(r){r.style.display=(f==='all'||r.dataset.cat.split(' ').indexOf(f)>-1)?'':'none'});root.querySelectorAll('[data-pane]').forEach(function(p){p.style.display=p.dataset.pane.split(' ').indexOf(f)>-1?'':'none'})}
+ tabs.forEach(function(t){t.onclick=function(){pick(t.dataset.f)}});
+ function fromHash(){var h=location.hash.slice(1);var has=[].some.call(tabs,function(t){return t.dataset.f===h});pick(has?h:'all')}
+ window.addEventListener('hashchange',fromHash);fromHash()});
+document.querySelectorAll('[data-view]').forEach(function(w){var b=w.querySelectorAll('.view-tg button');b.forEach(function(x){x.onclick=function(){b.forEach(function(y){y.classList.toggle('on',y===x)});w.querySelectorAll('[data-v]').forEach(function(p){p.style.display=p.dataset.v===x.dataset.t?'':'none'})}})});
+</script></body></html>
