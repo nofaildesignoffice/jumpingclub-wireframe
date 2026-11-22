@@ -655,7 +655,7 @@ footer.ft{border-top:1px solid #e5e5e5}
 .row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"])>.col-md-6>.radius{height:100%;display:flex;flex-direction:column;margin:0!important}
 .row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius{aspect-ratio:4/3;height:auto!important;overflow:hidden;margin:0!important}
 .row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;position:static!important;transform:none!important}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) dl.box{flex:1 1 auto;margin:0!important}
+.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) dl.box{flex:1 1 auto;margin:0!important;border-radius:0!important}
 @media(max-width:767.98px){.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]){grid-template-columns:1fr}}
 /* P05 Solution 라벨: 타이틀 위, 굵게, 브랜드 컬러 */
 .v3-sol{display:block;margin:0 0 12px!important;font-size:18px!important;font-weight:700!important;color:var(--primary)!important;letter-spacing:0}
