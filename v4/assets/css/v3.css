@@ -1008,6 +1008,8 @@ header.hd .gnb-menu{display:none!important}
 /* P02 위치 섹션 모바일 아래 여백 · 푸터 위 흰 여백 제거 */
 .contents:has(>.sc.heart:last-child>.v3-dir){padding-bottom:0!important}
 @media(max-width:995.98px){.contents>.sc.heart:has(>.v3-dir){height:auto!important;padding-bottom:80px!important}}
+.contents>.sc.heart:has(>.v3-dir){height:auto!important;padding-bottom:120px!important}
+@media(max-width:767.98px){.contents>.sc.heart:has(>.v3-dir){padding-bottom:64px!important}}
 /* P03 수상 내역 모바일: 카드 슬라이더(1.2장) */
 @media(max-width:767.98px){.v3-awg{flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:16px;margin-left:0!important;margin-right:calc(-1 * var(--v3-gut))!important;padding-right:var(--v3-gut)!important;row-gap:0}
 .v3-awg::-webkit-scrollbar{display:none}
