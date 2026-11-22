@@ -1134,6 +1134,9 @@ header.hd .hd-top .btn-support{height:44px!important;min-width:0!important;paddi
 footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;line-height:1.6;color:#888;word-break:keep-all}
 .top-visual.sub .v4-awards{margin-top:14px;font-size:14px;line-height:1.6;opacity:.85;word-break:keep-all}
 .v4-paras p+p{margin-top:12px}
+.heartSwiper .swiper-slide a.cont>dl{margin-top:auto}
+.index section.sect1 .heartSwiper .swiper-slide .cont::before{height:48%!important}
+@media(max-width:767.98px){.index section.sect1 .heartSwiper .swiper-slide .cont::before{height:56%!important}}
 .v4-photo3{grid-template-columns:repeat(3,1fr)}
 .v4-photo3 .v4-n{display:block;font-size:14px;color:var(--primary);margin-bottom:4px}
 .v4-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
