@@ -1138,3 +1138,4 @@ footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;li
 .circle-inner .v4-cdesc{}
 @media(max-width:767.98px){.circle-inner .v4-cdesc{display:none}}
 .v3-table th .v4-th-t{display:block;margin-top:4px;font-size:12px;font-weight:400;color:#888;white-space:normal;word-break:keep-all}
+section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .radius,section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .radius img{border-radius:0!important}
