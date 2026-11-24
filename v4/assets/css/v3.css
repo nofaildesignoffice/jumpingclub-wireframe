@@ -1138,7 +1138,15 @@ footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;li
 .circle-inner .v4-cdesc{}
 @media(max-width:767.98px){.circle-inner .v4-cdesc{display:none}}
 .v3-table th .v4-th-t{display:block;margin-top:4px;font-size:12px;font-weight:400;color:#888;white-space:normal;word-break:keep-all}
-section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .radius,section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .radius img{border-radius:0!important}
+/* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,auto);grid-auto-flow:column;gap:24px;margin:0!important}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6{display:contents}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{display:flex;flex-direction:column;margin:0!important;top:auto!important;background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius{aspect-ratio:4/3;height:auto!important;margin:0!important;border-radius:0!important;overflow:hidden}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;position:static!important;border-radius:0!important}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) dl.box{flex:1 1 auto;margin:0!important;padding:32px!important;background:#fff!important;border-radius:0!important}
+.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) dd{color:#666!important}
+@media(max-width:767.98px){.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]){grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) dl.box{padding:24px!important}}
 /* P03 목표 슬라이드: 본문이 길어져 썸네일이 눌리는 문제 */
 .thumbnail-swiper:has(.v4-paras)>.col-lg-6{max-height:none!important;height:auto!important}
 .thumbnail-swiper:has(.v4-paras) .swiperThumbs{flex-shrink:0!important}
