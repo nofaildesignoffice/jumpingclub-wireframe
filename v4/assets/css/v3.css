@@ -1140,6 +1140,14 @@ footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;li
 .v3-table th .v4-th-t{display:block;margin-top:4px;font-size:12px;font-weight:400;color:#888;white-space:normal;word-break:keep-all}
 /* 영상 탭(한글 등급명): 모바일에서 본문 폭 안에 맞추고 두 줄 허용 */
 @media(max-width:767.98px){.v3-matg nav:has(a[href="#mv2"])>.nav-link{flex:1 1 0!important;min-width:0!important;white-space:normal!important;word-break:keep-all;padding:12px 6px!important;line-height:1.35;display:flex;align-items:center;justify-content:center;text-align:center}}
+/* 썸네일 슬라이더: 모바일에서도 페이지 수·화살표·썸네일 표시 */
+@media(max-width:995.98px){.thumbnail-swiper .swiper-control.d-lg-none{display:none!important}
+.thumbnail-swiper .swiper-control.d-none.d-lg-flex{display:flex!important;position:static!important;top:auto!important;left:auto!important;width:100%!important;justify-content:space-between;margin:24px 0 12px!important}
+.thumbnail-swiper .swiper-control.d-none.d-lg-flex .swiper-pagination{display:block!important;position:static!important;width:auto!important;padding:0!important;white-space:nowrap}
+.thumbnail-swiper .swiper-control.d-none.d-lg-flex .swiper-nav{width:auto!important;flex:0 0 auto;gap:8px;justify-content:flex-end}
+.thumbnail-swiper:has(.swiperThumbs)>div:last-child{justify-content:flex-start!important}
+.thumbnail-swiper .swiperThumbs{display:block!important}
+.thumbnail-swiper .swiperThumbs .swiper-slide{width:80px!important;height:80px!important;max-width:none!important}}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
