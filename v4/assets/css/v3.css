@@ -1148,6 +1148,13 @@ footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;li
 .thumbnail-swiper:has(.swiperThumbs)>div:last-child{justify-content:flex-start!important}
 .thumbnail-swiper .swiperThumbs{display:block!important}
 .thumbnail-swiper .swiperThumbs .swiper-slide{width:80px!important;height:80px!important;max-width:none!important}}
+/* 버튼 크기 통일: '가입 안내 및 혜택 보기'(btn-lg h5 fw500) 기준 */
+html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x){border-width:1px!important;border-style:solid!important;padding:20px 40px!important;height:auto!important;min-height:0!important;font-size:18px!important;line-height:1.4!important;font-weight:500!important;letter-spacing:-0.04em!important;border-radius:999px!important}
+html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x) span{line-height:inherit!important}
+html body .v3-fbar a.v3-fbar-btn:not(#v4x){border-color:transparent!important}
+@media(max-width:1249.98px){html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x){font-size:16px!important}}
+@media(max-width:995.98px){html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x){padding:10px 24px!important}}
+@media(max-width:575.98px){html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x){font-size:14px!important}}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
