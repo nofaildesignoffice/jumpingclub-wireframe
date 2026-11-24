@@ -89,3 +89,6 @@
     $(document).on('click','.v3-vmodal',function(e){ if(e.target===this||$(e.target).closest('.v3-vm-x').length) vClose(); });
   });
 })(jQuery);
+
+/* v4 퀵메뉴 모바일 열기/닫기 */
+(function(){document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('.v4-qm-toggle,.v4-qm-close');if(!t)return;var q=t.closest('.v3-quick');var op=t.classList.contains('v4-qm-toggle');q.classList.toggle('v4-open',op);var b=q.querySelector('.v4-qm-toggle');if(b)b.setAttribute('aria-expanded',op?'true':'false');if(!op){var s=q.querySelector('.v3-q-sns');if(s)s.classList.remove('open');}});})();

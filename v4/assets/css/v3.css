@@ -1181,6 +1181,19 @@ html body .board-gallery li:has(.v3-mall-img) .v3-price em{font-size:13px!import
 html body .board-gallery li:has(.v3-mall-img) .v3-price b{font-size:16px!important}
 html body .board-gallery li:has(.v3-mall-img) .v3-price del{font-size:11px!important;flex-basis:100%}
 html body .board-gallery li:has(.v3-mall-img) .v3-cbtn{height:40px!important;min-height:0!important;padding:0 10px!important;margin-top:12px!important;font-size:14px!important}}
+/* 퀵메뉴 모바일: 접힘 원형 버튼 + 펼침/닫기 (데스크탑은 그대로) */
+.v4-qm-toggle,.v4-qm-close{display:none!important}
+@keyframes v4qm{0%,15%{transform:translateX(-0px)}20%,35%{transform:translateX(-60px)}40%,55%{transform:translateX(-120px)}60%,75%{transform:translateX(-180px)}80%,95%{transform:translateX(-240px)}100%{transform:translateX(-300px)}}
+@media(max-width:767.98px){html body .v3-quick.v3-qm1:not(.v4-open){padding:0!important;background:none!important;box-shadow:none!important;border-radius:50%!important}
+html body .v3-quick.v3-qm1:not(.v4-open)>*:not(.v4-qm-toggle){display:none!important}
+html body .v3-quick.v3-qm1:not(.v4-open)>.v4-qm-toggle{display:block!important;width:60px;height:60px;padding:0;border:0!important;border-radius:50%;overflow:hidden;background:var(--primary);box-shadow:0 8px 22px rgba(55,108,178,.4);cursor:pointer}
+.v4-qm-track{display:flex;width:360px;animation:v4qm 12s ease-in-out infinite}
+.v4-qm-slide{flex:0 0 60px;height:60px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#fff}
+html body .v3-quick.v3-qm1 .v4-qm-slide svg{width:20px!important;height:20px!important;color:#fff!important}
+.v4-qm-slide em{font-style:normal;font-size:10px;font-weight:700;line-height:1;letter-spacing:-.02em;white-space:nowrap}
+html body .v3-quick.v3-qm1.v4-open>.v4-qm-close{display:flex!important;width:50px;padding:9px 0;flex-direction:column;align-items:center;gap:3px;border:0;border-top:1px solid #eef1f5;background:transparent;color:#333;font-size:10px;font-weight:700;border-radius:0 0 26px 26px;cursor:pointer}
+html body .v3-quick.v3-qm1.v4-open>.v4-qm-close svg{width:19px;height:19px;color:#333}}
+@media(max-width:767.98px) and (prefers-reduced-motion:reduce){.v4-qm-track{animation:none}}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
