@@ -1162,6 +1162,8 @@ html body .business.anc .orchestra .circle-bx:has(.v4-cdesc) .circle-inner{width
 html body .business.anc .orchestra .circle-bx:has(.v4-cdesc) .v3-cnum{font-size:22px!important}
 html body .business.anc .orchestra .circle-bx:has(.v4-cdesc) .circle-inner span{font-size:17px!important;line-height:1.4!important}
 html body .business.anc .orchestra .circle-bx:has(.v4-cdesc) .circle-inner .v4-cdesc{display:block!important;margin-top:8px;font-size:13px!important;line-height:1.5!important}}
+/* 썸네일 슬라이더 작은 썸네일: 라운딩 줄임 */
+html body .thumbnail-swiper .swiperThumbs .swiper-slide :is(.img,img){border-radius:8px!important}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
