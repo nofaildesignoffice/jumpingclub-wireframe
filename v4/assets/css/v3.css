@@ -1199,6 +1199,10 @@ html body .v3-quick.v3-qm1.v4-open>.v4-qm-close svg{width:19px;height:19px;color
 .topSwiper .contain>dl:has(+.v3-micro),.topSwiper .contain>dl:has(+.v3-micro) dd{margin-bottom:0!important;padding-bottom:0!important}
 .topSwiper .contain>dl+.v3-micro{margin-top:16px!important}
 @media(max-width:767.98px){.topSwiper .contain>.v3-micro+p{margin-top:20px!important}}
+/* 메인 sect2 머리 오른쪽 문구: 검정 + 데스크탑에서 제목과 하단 맞춤 */
+html body .index section.sect2 .sect2-head p.h5.fw400:not(#v4x){color:#222!important}
+@media(min-width:996px){html body .index section.sect2 .sect2-head div:has(>p.h5.fw400):not(#v4x){display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:56px}
+html body .index section.sect2 .sect2-head p.h5.fw400:not(#v4x){margin-bottom:0!important}}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
