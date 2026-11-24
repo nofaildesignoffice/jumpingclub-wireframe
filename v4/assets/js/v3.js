@@ -2,7 +2,7 @@
 (function($){
   var home=document.querySelector('.ct.index .sect2')!==null;
   function inst(sel,opts,scope){ document.querySelectorAll(sel).forEach(function(el){ if(el.swiper) return; var r=el.closest(scope)||el.parentNode;
-    var o=$.extend({},opts); o.navigation={nextEl:r.querySelector('.swiper-button-next'),prevEl:r.querySelector('.swiper-button-prev')}; var pg=r.querySelector('.swiper-pagination'); if(pg) o.pagination={el:pg,type:'progressbar'}; new Swiper(el,o); }); }
+    var o=$.extend({},opts); if(el.hasAttribute('data-loop')){o.loop=true;} o.navigation={nextEl:r.querySelector('.swiper-button-next'),prevEl:r.querySelector('.swiper-button-prev')}; var pg=r.querySelector('.swiper-pagination'); if(pg) o.pagination={el:pg,type:'progressbar'}; new Swiper(el,o); }); }
   $(function(){
     if(!home){
       if(document.querySelector('.topSwiper')) new Swiper('.topSwiper',{speed:800,pagination:{el:'.topSwiper .swiper-pagination'},navigation:{nextEl:'.topSwiper .swiper-button-next',prevEl:'.topSwiper .swiper-button-prev'}});
