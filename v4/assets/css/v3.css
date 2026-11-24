@@ -1142,6 +1142,8 @@ section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .radius,sec
 /* P03 목표 슬라이드: 본문이 길어져 썸네일이 눌리는 문제 */
 .thumbnail-swiper:has(.v4-paras)>.col-lg-6{max-height:none!important;height:auto!important}
 .thumbnail-swiper:has(.v4-paras) .swiperThumbs{flex-shrink:0!important}
+/* P03 급수 체계 카드: 아주 연한 그림자 */
+.ct .contents section.v3-lvl .v3-lvl-box{box-shadow:0 6px 24px rgba(22,48,79,.06)!important}
 /* 1124: 로고 슬라이드 잘림 방지 */
 :is(.swiperMain,.swiperThumbs) .swiper-slide img[src*="org-jc"]{object-fit:contain!important;background:#fff;padding:6%}
 /* 1124: 회원 유형 탭 + 혜택 나열 */
