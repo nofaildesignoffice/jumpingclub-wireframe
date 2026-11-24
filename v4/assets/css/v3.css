@@ -1194,6 +1194,11 @@ html body .v3-quick.v3-qm1 .v4-qm-slide svg{width:20px!important;height:20px!imp
 html body .v3-quick.v3-qm1.v4-open>.v4-qm-close{display:flex!important;width:50px;padding:9px 0;flex-direction:column;align-items:center;gap:3px;border:0;border-top:1px solid #eef1f5;background:transparent;color:#333;font-size:10px;font-weight:700;border-radius:0 0 26px 26px;cursor:pointer}
 html body .v3-quick.v3-qm1.v4-open>.v4-qm-close svg{width:19px;height:19px;color:#333}}
 @media(max-width:767.98px) and (prefers-reduced-motion:reduce){.v4-qm-track{animation:none}}
+/* 메인 히어로: 보조문구를 부제 아래로, 버튼과 간격 */
+.topSwiper .contain>.v3-micro+p{margin-top:32px!important}
+.topSwiper .contain>dl:has(+.v3-micro),.topSwiper .contain>dl:has(+.v3-micro) dd{margin-bottom:0!important;padding-bottom:0!important}
+.topSwiper .contain>dl+.v3-micro{margin-top:16px!important}
+@media(max-width:767.98px){.topSwiper .contain>.v3-micro+p{margin-top:20px!important}}
 /* Sol05 카드: Sol02(1대1 컨설팅) 카드 스타일 */
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"])>.col-md-6>.radius{background:#fff!important;border-radius:20px!important;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)!important}
 .ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius,.ct section.domestic.contain .row.domestic-cont:has(img[src*="ppt/s5-"]) .img.radius img{border-radius:0!important}
