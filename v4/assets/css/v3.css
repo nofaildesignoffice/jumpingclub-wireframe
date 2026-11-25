@@ -9,8 +9,8 @@
 @media(max-width:991px){.ct .contents .sc+.sc,.ct .contents .sc+section,.ct .contents section+.sc,.ct .contents section+section{margin-top:90px}}
 
 /* 헤더 */
-header.hd .hd-top h1 a{background-image:url(../logo-jc-white.svg);background-repeat:no-repeat;background-position:left center;background-size:contain}
-body.is-scroll header.hd .hd-top h1 a,body.search-open header.hd .hd-top h1 a,body.gnb-open header.hd .hd-top h1 a,body:not(:has(.top-visual)) header.hd .hd-top h1 a{background-image:url(../logo-jc.svg)}
+header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a{background-image:url(../logo-jc-white.svg);background-repeat:no-repeat;background-position:left center;background-size:contain}
+body.is-scroll header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a,body.search-open header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a,body.gnb-open header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a,body:not(:has(.top-visual)) header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a{background-image:url(../logo-jc.svg)}
 header.hd .hd-top .v3-matjip{display:block;margin:0 12px 0 auto;height:44px;flex:none}header.hd .hd-top .v3-matjip img{height:44px;width:auto;display:block}
 header.hd #gnb ul{gap:0}header.hd #gnb ul li a{white-space:nowrap}
 @media(max-width:1400px){header.hd #gnb ul li{margin:0 10px!important}header.hd #gnb ul li a{font-size:15px}}
@@ -157,7 +157,7 @@ header.hd .hd-top .v3-matjip img{border-radius:6px}
 .index .topSwiper .swiper-slide::before{content:'';position:absolute;left:0;top:0;bottom:0;width:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Cg opacity='.55'%3E %3Cellipse cx='400' cy='770' rx='130' ry='13' fill='%23ffffff' opacity='.45'/%3E %3Cpath d='M250 506C210 -10 590 -10 550 506L540 506C578 10 222 10 260 506Z' fill='%23ffffff' opacity='.32'/%3E %3Cpath d='M250 506C190 60 610 60 550 506L542 506C596 76 204 76 258 506Z' fill='%23ffffff' opacity='.16'/%3E %3Cpath d='M250 510C236 800 564 800 550 510L540 512C552 782 248 782 260 512Z' fill='%23ffffff'/%3E %3Cpath d='M300 590C276 625 276 665 302 700C292 664 292 626 300 590Z' fill='%23ffffff' opacity='.6'/%3E %3Cpath d='M274 610C256 636 256 664 276 690C268 664 268 636 274 610Z' fill='%23ffffff' opacity='.35'/%3E %3Cpath d='M500 590C524 625 524 665 498 700C508 664 508 626 500 590Z' fill='%23ffffff' opacity='.6'/%3E %3Cpath d='M526 610C544 636 544 664 524 690C532 664 532 636 526 610Z' fill='%23ffffff' opacity='.35'/%3E %3Cpath d='M330 322C318 350 300 376 290 398C282 420 270 444 260 464L276 474C288 452 300 428 308 408C318 386 336 362 354 344Z' fill='%23ffffff'/%3E %3Cpath d='M470 322C482 350 500 376 510 398C518 420 530 444 540 464L524 474C512 452 500 428 492 408C482 386 464 362 446 344Z' fill='%23ffffff'/%3E %3Crect x='258' y='466' width='20' height='54' rx='10' fill='%23a9c2e3' transform='rotate(18 268 490)'/%3E %3Crect x='522' y='466' width='20' height='54' rx='10' fill='%23a9c2e3' transform='rotate(-18 532 490)'/%3E %3Ccircle cx='268' cy='468' r='13' fill='%23ffffff'/%3E%3Ccircle cx='532' cy='468' r='13' fill='%23ffffff'/%3E %3Cpath d='M352 506C344 540 338 566 342 582C346 606 356 630 362 648L388 648C384 628 374 604 372 584C372 566 384 540 392 510Z' fill='%23ffffff'/%3E %3Cpath d='M448 506C456 540 462 566 458 582C454 606 444 630 438 648L412 648C416 628 426 604 428 584C428 566 416 540 408 510Z' fill='%23ffffff'/%3E %3Cpath d='M356 630L384 630 388 648 362 648Z' fill='%23d3e1f3'/%3E%3Cpath d='M444 630L416 630 412 648 438 648Z' fill='%23d3e1f3'/%3E %3Cpath d='M362 648L394 648C398 660 396 670 386 674L348 674C338 674 340 656 362 648Z' fill='%23a9c2e3'/%3E %3Cpath d='M438 648L406 648C402 660 404 670 414 674L452 674C462 674 460 656 438 648Z' fill='%23a9c2e3'/%3E %3Cpath d='M354 444L446 444 454 512 408 518 400 488 392 518 346 512Z' fill='%23bcd0ea'/%3E %3Cpath d='M342 300C362 286 438 286 458 300L472 360 448 370 446 452C420 460 380 460 354 452L352 370 328 360Z' fill='%23ffffff'/%3E %3Cpath d='M368 300C380 330 420 330 432 300' fill='none'/%3E %3Cpath d='M372 296C384 314 416 314 428 296C418 302 382 302 372 296Z' fill='%23bcd0ea'/%3E %3Cpath d='M386 360L400 352 414 360 410 378 390 378Z' fill='%23bcd0ea' opacity='.8'/%3E %3Crect x='388' y='266' width='24' height='26' rx='8' fill='%23ffffff'/%3E %3Cpath d='M434 196C468 168 500 146 524 104C514 156 486 200 446 216Z' fill='%23d3e1f3'/%3E %3Cpath d='M446 200C478 186 506 170 526 140C518 176 494 204 452 214Z' fill='%23bcd0ea' opacity='.7'/%3E %3Ccircle cx='400' cy='232' r='46' fill='%23ffffff'/%3E %3Cpath d='M354 234A46 46 0 0 1 446 230C432 210 404 204 384 214C372 220 362 226 354 234Z' fill='%23d3e1f3'/%3E %3Ccircle cx='438' cy='200' r='8' fill='%23bcd0ea'/%3E %3Cg fill='%23ffffff'%3E%3Cellipse cx='176' cy='392' rx='17' ry='12' transform='rotate(-22 176 392)'/%3E%3Crect x='188' y='310' width='6' height='82'/%3E%3Cpath d='M188 310L232 296 232 316 194 330Z'/%3E%3Cellipse cx='222' cy='382' rx='17' ry='12' transform='rotate(-22 222 382)'/%3E%3Crect x='233' y='300' width='6' height='82'/%3E%3C/g%3E %3Cg fill='%23ffffff' opacity='.85'%3E%3Cellipse cx='620' cy='236' rx='15' ry='11' transform='rotate(-22 620 236)'/%3E%3Crect x='631' y='162' width='5.5' height='74'/%3E%3Cpath d='M636 162C652 176 666 186 660 214C656 196 648 188 636 184Z'/%3E%3C/g%3E %3Cpath d='M640 330L648 352 670 360 648 368 640 390 632 368 610 360 632 352Z' fill='%23ffffff' opacity='.8'/%3E %3Cpath d='M150 200L156 216 172 222 156 228 150 244 144 228 128 222 144 216Z' fill='%23ffffff' opacity='.7'/%3E %3Cpath d='M600 560L604 571 615 575 604 579 600 590 596 579 585 575 596 571Z' fill='%23ffffff' opacity='.6'/%3E %3C/g%3E%3C/svg%3E") center/cover no-repeat;pointer-events:none}
 .index .topSwiper .contain dl{max-width:46%}.index .topSwiper .contain dt{word-break:keep-all}}
 @media(max-width:995.98px){.index .topSwiper .swiper-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,79,.35),rgba(22,48,79,.8));z-index:1;pointer-events:none}.index .topSwiper .contain{z-index:2;position:relative}}
-.index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.jpg) center/cover no-repeat,#376CB2!important;border-radius:50% 50% 0 0/56px 56px 0 0}
+.index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.webp) center/cover no-repeat,#376CB2!important;border-radius:50% 50% 0 0/56px 56px 0 0}
 .index section.sect2{background:none!important;padding-bottom:0}
 .index .v3-s2p{display:block;height:clamp(280px,52vw,760px);background:linear-gradient(180deg,#6F9CD6 0,rgba(111,156,214,.78) 12%,rgba(111,156,214,0) 40%),url(../new/events-hero-159.webp) center/cover no-repeat}
 .index section.sect3{padding:120px 0 0}
@@ -303,7 +303,7 @@ img[src*="grade-"],img[src*="cert-"]{object-fit:contain!important;background:#ff
 .board-detail-top .v3-back{display:inline-flex;align-items:center;gap:8px;color:#333;font-weight:500}
 
 /* S2 하늘 → 건물 사진 연결: 같은 단색으로 페이드해 이음매 제거 */
-.index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5) 55%,rgba(91,135,195,.92) 82%,#5B87C3 100%),url(../gen/sky.jpg) center top/cover no-repeat,#5B87C3!important}
+.index section.sect2 .contents{background:linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5) 55%,rgba(91,135,195,.92) 82%,#5B87C3 100%),url(../gen/sky.webp) center top/cover no-repeat,#5B87C3!important}
 .index .v3-s2p{position:relative;margin-top:-1px;background:url(../new/events-hero-159.webp) center/cover no-repeat,#5B87C3}
 .index .v3-s2p::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#5B87C3 0,#5B87C3 6%,rgba(91,135,195,.85) 20%,rgba(91,135,195,.45) 42%,rgba(91,135,195,.12) 65%,rgba(91,135,195,0) 85%)}
 
@@ -464,7 +464,7 @@ header.hd .hd-top #gnb ul.v3-dd a:hover{color:var(--primary)!important}
 .v3-photo4 figure{margin:0}
 .v3-photo4 .v3-p4-img{margin:0;aspect-ratio:16/10;border-radius:20px;overflow:hidden;background:#eee}
 .v3-photo4 .v3-p4-img img{width:100%;height:100%;object-fit:cover;display:block}
-.v3-photo4 h3{margin:20px 0 0;font-size:20px;font-weight:700;color:#111;line-height:1.4}
+.v3-photo4 :is(h3:where(:not([data-oh])),:where([data-oh="3"])){margin:20px 0 0;font-size:20px;font-weight:700;color:#111;line-height:1.4}
 .v3-photo4 .v3-p4-txt{margin:8px 0 0;font-size:16px;color:#666;line-height:1.6}
 @media(max-width:768px){.v3-photo4{grid-template-columns:1fr;gap:32px}}
 /* 수준별·요일별 커리큘럼 카드 */
@@ -543,41 +543,41 @@ footer.ft{border-top:1px solid #e5e5e5}
 @media(min-width:992px){.heartheart .process .recruit-process .step.last{flex:0 0 auto;width:292px;max-width:292px}
 .heartheart .process .recruit-process .step>*:not(.step-img){position:relative;left:78px;transform:translateX(-50%);width:max-content;max-width:260px;text-align:center;margin-left:0;margin-right:0}}
 /* 연한 파랑 구분 섹션 */
-.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]),
+.contents>.sc.heart.intro:has(img[data-v4alt="회장 프로필 사진"]),
 .contents>.sc.index:has(>section.sect3),
-.contents>.v3-sec:has(img[alt="급수 수업 장면"]),
-.contents>.v3-sec:has(img[alt="주니어마스터 단체 사진"]),
+.contents>.v3-sec:has(img[data-v4alt="급수 수업 장면"]),
+.contents>.v3-sec:has(img[data-v4alt="주니어마스터 단체 사진"]),
 .contents>.v3-sec:has(a[href^="P06-course"] .v3-cbtn){background:#F4F8FD}
-.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings,
-.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section,
+.contents>.sc.heart.intro:has(img[data-v4alt="회장 프로필 사진"]) .greetings,
+.contents>.sc.heart.intro:has(img[data-v4alt="회장 프로필 사진"]) .greetings>section,
 .contents>.sc.index>section.sect3,
-.contents>.v3-sec:has(img[alt="급수 수업 장면"]) .sc,
-.contents>.v3-sec:has(img[alt="주니어마스터 단체 사진"]) .sc,
+.contents>.v3-sec:has(img[data-v4alt="급수 수업 장면"]) .sc,
+.contents>.v3-sec:has(img[data-v4alt="주니어마스터 단체 사진"]) .sc,
 .contents>.v3-sec:has(a[href^="P06-course"] .v3-cbtn) section{background-color:transparent!important}
 .contents>.sc.index>section.sect3 .logo img{mix-blend-mode:multiply}
 /* PROGRAM 흰 배경, 커리큘럼·신청절차 연한 회색 */
-.contents>.v3-sec:has(img[alt="유소년 수업"]){background:#fff!important}
+.contents>.v3-sec:has(img[data-v4alt="유소년 수업"]){background:#fff!important}
 .contents>.v3-sec:has(.v3-cur),.contents>.v3-sec:has(.recruit-process){background:#F7F7F8!important}
 .contents>.v3-sec:has(.v3-cur) .sc,.contents>.v3-sec:has(.v3-cur) section,.contents>.v3-sec:has(.recruit-process) .sc,.contents>.v3-sec:has(.recruit-process) .process,.contents>.v3-sec:has(.recruit-process) section{background-color:transparent!important}
 /* P03 섹션 배경 지정 */
 .contents>.v3-sec:has(.v3-awg){background:#EEF3FA!important}
-.contents>.v3-sec:has(img[alt="급수 수업 장면"]){background:#fff!important}
-.contents>.v3-sec:has(img[alt="유소년 수업"]){background:#F7F7F8!important}
+.contents>.v3-sec:has(img[data-v4alt="급수 수업 장면"]){background:#fff!important}
+.contents>.v3-sec:has(img[data-v4alt="유소년 수업"]){background:#F7F7F8!important}
 .contents>.v3-sec:has(.v3-cur){background:#fff!important}
-.contents>.v3-sec:has(.v3-awg) section,.contents>.v3-sec:has(img[alt="급수 수업 장면"]) .sc,.contents>.v3-sec:has(img[alt="급수 수업 장면"]) section,.contents>.v3-sec:has(img[alt="유소년 수업"]) .sc,.contents>.v3-sec:has(img[alt="유소년 수업"]) section{background:transparent!important}
+.contents>.v3-sec:has(.v3-awg) section,.contents>.v3-sec:has(img[data-v4alt="급수 수업 장면"]) .sc,.contents>.v3-sec:has(img[data-v4alt="급수 수업 장면"]) section,.contents>.v3-sec:has(img[data-v4alt="유소년 수업"]) .sc,.contents>.v3-sec:has(img[data-v4alt="유소년 수업"]) section{background:transparent!important}
 /* 인사말 섹션 위아래 여백 */
-.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:120px 0!important}
-@media(max-width:767.98px){.contents>.sc.heart.intro:has(img[alt="회장 프로필 사진"]) .greetings>section{padding:80px 0!important}}
-.contents:has(>.sc.heart.intro:first-child img[alt="회장 프로필 사진"]){padding-top:0!important}
+.contents>.sc.heart.intro:has(img[data-v4alt="회장 프로필 사진"]) .greetings>section{padding:120px 0!important}
+@media(max-width:767.98px){.contents>.sc.heart.intro:has(img[data-v4alt="회장 프로필 사진"]) .greetings>section{padding:80px 0!important}}
+.contents:has(>.sc.heart.intro:first-child img[data-v4alt="회장 프로필 사진"]){padding-top:0!important}
 /* 색 배경 섹션과 헤더·푸터 사이 흰 여백 제거 */
 .contents:has(>.v3-sec:last-child #thumbswiper-2){padding-bottom:0!important}
-.contents>.sc.heart.intro:first-child:has(img[alt="회장 프로필 사진"])+.sc{margin-top:0!important}
+.contents>.sc.heart.intro:first-child:has(img[data-v4alt="회장 프로필 사진"])+.sc{margin-top:0!important}
 /* P03 가입 등급 카드 배경 투명 */
 .ct .contents .sc.index .v3-gcards.sect5 .sect5Swiper .swiper-slide.swiper-slide>a{background:transparent!important;border-radius:0!important}
 .ct .contents .sc.index .v3-gcards.sect5 .sect5Swiper .swiper-slide.swiper-slide .link{padding:20px 0 0!important}
 /* 메인 sect2: 처음 흰 배경 → 대회·활동 나오면 배경 이미지 */
 .index section.sect2 .contents{background:#fff!important}
-.index section.sect2 .contents::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(91,135,195,0) 70%,#5B87C3 100%),linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.jpg) center/cover no-repeat,#376CB2;opacity:0;transition:opacity .3s ease;pointer-events:none;z-index:0}
+.index section.sect2 .contents::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(91,135,195,0) 70%,#5B87C3 100%),linear-gradient(180deg,rgba(44,90,150,.72),rgba(55,108,178,.5)),url(../gen/sky.webp) center/cover no-repeat,#376CB2;opacity:0;transition:opacity .3s ease;pointer-events:none;z-index:0}
 .index section.sect2 .contents>.contain{position:relative;z-index:1}
 .index section.sect2:has(a[href="#sect2-tab2"].on) .contents::before{opacity:1}
 .index section.sect2 .contents :is(.h2,.h5,.desc,.text-primary,.cnt,.tab-link li a){transition:color .3s ease,border-color .3s ease}
@@ -593,8 +593,8 @@ footer.ft{border-top:1px solid #e5e5e5}
 @media(min-width:996px){.index section.sect2 .contents{display:flex!important;flex-direction:column;justify-content:center;padding:100px 0 0!important}
 .index section.sect2 .contents>.contain{width:100%;flex:0 0 auto}}
 /* P05 교육관 스토리: 카드 4개, 본문 폭 안에서만 */
-.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper{overflow:hidden!important}
-@media(min-width:992px){.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .swiper-slide{width:calc((100% - 72px)/4)!important}}
+.v3-sec:has(img[data-v4alt="교육관 사진 1"]) .sect5Swiper{overflow:hidden!important}
+@media(min-width:992px){.v3-sec:has(img[data-v4alt="교육관 사진 1"]) .sect5Swiper .swiper-slide{width:calc((100% - 72px)/4)!important}}
 /* P05 지표 박스 라운딩·그림자 */
 .ct .contents section.v3-stats .box{border:0!important;border-radius:20px!important;box-shadow:0 8px 24px rgba(22,48,79,.10)!important;overflow:hidden}
 /* P05: 상단 서브 히어로 제거, 첫 섹션이 히어로 */
@@ -614,8 +614,8 @@ footer.ft{border-top:1px solid #e5e5e5}
 .contents>.v3-sec:has(.v3-matg)>*{margin-top:0!important;padding-top:56px!important;padding-bottom:56px!important}
 .contents>.v3-sec:has(.v3-matg)>.sc>section{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}
 .contents>.v3-sec:has(.v3-matg)+.v3-sec:has(.v3-matg)>*{border-top:1px solid #DCE6F2}
-.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3){font-size:24px!important;display:flex;align-items:center;gap:10px}
-.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>h4.h3,.v3-matg>.contain>h4.h3)::before{content:'';width:4px;height:22px;border-radius:2px;background:var(--primary)}
+.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>:is(h4:where(:not([data-oh])),:where([data-oh="4"])).h3,.v3-matg>.contain>:is(h4:where(:not([data-oh])),:where([data-oh="4"])).h3){font-size:24px!important;display:flex;align-items:center;gap:10px}
+.contents>.v3-sec:has(.v3-matg) :is(.v3-matg>:is(h4:where(:not([data-oh])),:where([data-oh="4"])).h3,.v3-matg>.contain>:is(h4:where(:not([data-oh])),:where([data-oh="4"])).h3)::before{content:'';width:4px;height:22px;border-radius:2px;background:var(--primary)}
 .contents>.v3-sec:has(.v3-matg):not(:has(+.v3-sec .v3-matg))>*{padding-bottom:120px!important}
 /* P05 고민 섹션: 타이틀 위·가운데, 카드 흰 박스 가로 1줄 */
 .contents>.v3-sec section.benefit .contain>.row{flex-direction:column;align-items:stretch}
@@ -627,11 +627,11 @@ footer.ft{border-top:1px solid #e5e5e5}
 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6{flex:none;max-width:none;width:auto;padding:32px 24px!important;margin:0!important;background:#fff!important;border:0!important;border-radius:20px;box-shadow:0 8px 24px rgba(22,48,79,.10)}
 @media(max-width:1199.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:767.98px){.contents>.v3-sec section.benefit .benefit-cont{grid-template-columns:1fr}}
-.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper{padding-bottom:24px!important}
+.v3-sec:has(img[data-v4alt="교육관 사진 1"]) .sect5Swiper{padding-bottom:24px!important}
 .contents>.v3-sec section.benefit{overflow:visible!important}
 /* P05 후기 카드 본문 줄바꿈 */
-.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p{white-space:normal!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
-.v3-sec:has(img[alt="교육관 사진 1"]) .sect5Swiper .link p+p{margin-top:8px}
+.v3-sec:has(img[data-v4alt="교육관 사진 1"]) .sect5Swiper .link p{white-space:normal!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+.v3-sec:has(img[data-v4alt="교육관 사진 1"]) .sect5Swiper .link p+p{margin-top:8px}
 /* P05 "이런 고민을 덜어 드리기 위해" 섹션: 고정 배경 이미지 + 검정 반투명 */
 .ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top){position:relative;background:url(../new/program-event-039.webp) center/cover no-repeat fixed!important;padding:140px 0!important}
 .ct.v3-p05 .contents>.v3-sec:not(:first-child):has(>section.cont-top)::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.5)}
@@ -644,19 +644,19 @@ footer.ft{border-top:1px solid #e5e5e5}
 .v3-lgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
 .v3-lgrid .img{margin:0;border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:#fff;box-shadow:0 8px 24px rgba(22,48,79,.08)}
 .v3-lgrid .img img{display:block;width:100%;height:100%;object-fit:cover}
-.v3-lgrid .img img[src$=".png"]{object-fit:contain;padding:28px}
+.v3-lgrid .img img[data-v4png]{object-fit:contain;padding:28px}
 @media(max-width:767.98px){.v3-lgrid{grid-template-columns:1fr;gap:16px;margin-top:24px}}
 /* P05 영상 탭 아래 여백 (자료 블록과 같은 48px) */
 .v3-matg:has(#mv0)>.nav-wrap{margin-bottom:48px!important}
 @media(max-width:767.98px){.v3-matg:has(#mv0)>.nav-wrap{margin-bottom:32px!important}}
 /* P05 Solution 01 카드: 가로 1줄 그리드 */
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0!important;align-items:stretch}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"])>.col-md-6{flex:none;max-width:none;width:auto;padding:0!important;margin:0!important;top:auto!important;transform:none!important}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"])>.col-md-6>.radius{height:100%;display:flex;flex-direction:column;margin:0!important}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius{aspect-ratio:4/3;height:auto!important;overflow:hidden;margin:0!important}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) .img.radius img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;position:static!important;transform:none!important}
-.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]) dl.box{flex:1 1 auto;margin:0!important;border-radius:0!important}
-@media(max-width:767.98px){.row.domestic-cont:has(img[alt="급수별 줄넘기 수업 장면"]){grid-template-columns:1fr}}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"]){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0!important;align-items:stretch}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.col-md-6{flex:none;max-width:none;width:auto;padding:0!important;margin:0!important;top:auto!important;transform:none!important}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.col-md-6>.radius{height:100%;display:flex;flex-direction:column;margin:0!important}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"]) .img.radius{aspect-ratio:4/3;height:auto!important;overflow:hidden;margin:0!important}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"]) .img.radius img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;position:static!important;transform:none!important}
+.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"]) dl.box{flex:1 1 auto;margin:0!important;border-radius:0!important}
+@media(max-width:767.98px){.row.domestic-cont:has(img[data-v4alt="급수별 줄넘기 수업 장면"]){grid-template-columns:1fr}}
 /* P05 Solution 라벨: 타이틀 위, 굵게, 브랜드 컬러 */
 .v3-sol{display:block;margin:0 0 12px!important;font-size:18px!important;font-weight:700!important;color:var(--primary)!important;letter-spacing:0}
 .tit>.v3-sol{margin-bottom:16px!important}
@@ -674,20 +674,20 @@ section.v3-sold{max-width:var(--v3-cw)!important;margin-left:auto!important;marg
 .v3-sold-list .ds{font-size:16px;line-height:1.7;color:#555;margin:0;word-break:keep-all}
 @media(max-width:991.98px){.v3-sold-list li{grid-template-columns:1fr;gap:8px;padding:24px 4px}}
 /* P05 Solution 01: 타이틀을 카드 위로 */
-section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row{flex-direction:column;align-items:stretch}
-section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg{flex:0 0 auto;max-width:100%;width:100%}
-section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg .tit{margin-bottom:48px}
-section.domestic.contain:has(img[alt="급수별 줄넘기 수업 장면"])>.row>.col-lg-7{flex:0 0 auto;max-width:100%;width:100%;margin:0!important}
+section.domestic.contain:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.row{flex-direction:column;align-items:stretch}
+section.domestic.contain:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.row>.col-lg{flex:0 0 auto;max-width:100%;width:100%}
+section.domestic.contain:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.row>.col-lg .tit{margin-bottom:48px}
+section.domestic.contain:has(img[data-v4alt="급수별 줄넘기 수업 장면"])>.row>.col-lg-7{flex:0 0 auto;max-width:100%;width:100%;margin:0!important}
 /* P05 Solution 04 타이틀: Solution 03 타이틀과 같은 크기 */
-.ct.v3-p05 section.sect1 h2.head-tit{font-size:40px!important;color:#111!important;line-height:1.35!important;letter-spacing:normal}
-@media(max-width:767.98px){.ct.v3-p05 section.sect1 h2.head-tit{font-size:28px!important}}
+.ct.v3-p05 section.sect1 :is(h2:where(:not([data-oh])),:where([data-oh="2"])).head-tit{font-size:40px!important;color:#111!important;line-height:1.35!important;letter-spacing:normal}
+@media(max-width:767.98px){.ct.v3-p05 section.sect1 :is(h2:where(:not([data-oh])),:where([data-oh="2"])).head-tit{font-size:28px!important}}
 /* P05 Solution 04: 타이틀·카드를 본문 폭 1152px에 맞춤, 카드 3장 균등 */
 .ct.v3-p05 section.sect1>.contain,.ct.v3-p05 section.sect1>.heartSwiper{max-width:var(--v3-cw)!important;margin-left:auto!important;margin-right:auto!important;padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
 @media(min-width:992px){.ct.v3-p05 section.sect1 .heartSwiper .swiper-slide{width:calc((100% - 48px)/3)!important}}
 /* P05 Solution 05 카드: 테두리·하늘색 배경 제거 */
-section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .radius.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important}
-section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box,section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont dl.box.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important;padding:20px 0 0!important}
-section.domestic.contain:has(img[alt="상담 Q&A북"]) .domestic-cont .img.radius{border-radius:20px!important;overflow:hidden}
+section.domestic.contain:has(img[data-v4alt="상담 Q&A북"]) .domestic-cont .radius,section.domestic.contain:has(img[data-v4alt="상담 Q&A북"]) .domestic-cont .radius.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important}
+section.domestic.contain:has(img[data-v4alt="상담 Q&A북"]) .domestic-cont dl.box,section.domestic.contain:has(img[data-v4alt="상담 Q&A북"]) .domestic-cont dl.box.bg-primary-bg{background:transparent!important;border:0!important;box-shadow:none!important;padding:20px 0 0!important}
+section.domestic.contain:has(img[data-v4alt="상담 Q&A북"]) .domestic-cont .img.radius{border-radius:20px!important;overflow:hidden}
 /* 이미지 아래 텍스트 박스가 붙는 카드: 이미지 하단 좌우 라운딩 제거 */
 .domestic-cont .radius.bg-primary-bg{overflow:hidden}
 .domestic-cont .radius.bg-primary-bg>.img.radius{border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}
@@ -825,7 +825,7 @@ header.hd .v3-nolink{cursor:default}
 /* P05 고민 카드 제목 한 줄 */
 .ct.v3-p05 .contents>.v3-sec section.benefit .benefit-cont>.col-md-6 dt br{display:none}
 /* GNB 가운데 정렬 */
-@media(min-width:1200px){header.hd .hd-top{position:relative}header.hd .hd-top #gnb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important}header.hd .hd-top h1+#gnb+a,header.hd .hd-top #gnb+a{margin-left:auto!important}}
+@media(min-width:1200px){header.hd .hd-top{position:relative}header.hd .hd-top #gnb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important}header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"]))+#gnb+a,header.hd .hd-top #gnb+a{margin-left:auto!important}}
 @media(min-width:992px) and (max-width:1199.98px){header.hd .hd-top #gnb{margin:0 auto!important}}
 /* 퀵메뉴 온라인캠퍼스 */
 .v3-qm1>a.v3-q-campus span{text-align:center}
@@ -900,7 +900,7 @@ header.hd .v3-nolink{cursor:default}
 .index section.sect2 .contents .sect2-head{display:flex;flex-direction:column}
 .index section.sect2 .contents .sect2-head>.d-flex{display:contents!important}
 .index section.sect2 .contents .sect2-head>.d-flex>div{order:1}
-.index section.sect2 .contents .sect2-head h2{margin:8px 0 16px!important}
+.index section.sect2 .contents .sect2-head :is(h2:where(:not([data-oh])),:where([data-oh="2"])){margin:8px 0 16px!important}
 .index section.sect2 .contents .sect2-head>div:last-child{order:2;display:block!important}
 .index section.sect2 .contents .sect2-head>.d-flex>p.d-lg-none{order:3;margin:24px 0 0}
 .index section.sect2 .contents .sect2-head .btn-big-support{white-space:nowrap;width:auto}
@@ -944,7 +944,7 @@ body.v3-vm-open{overflow:hidden}
 .v3-hicon,.v3-draw,.v3-ddim{display:none}
 @media(max-width:995.98px){
 header.hd .hd-top{position:relative}
-header.hd .hd-top h1{position:absolute!important;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important}
+header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])){position:absolute!important;left:50%;top:50%;transform:translate(-50%,-50%);margin:0!important}
 header.hd .hd-top .btn-gnb-open{margin:0!important}
 header.hd .hd-top .btn-gnb-open i,header.hd .hd-top .btn-gnb-open::before,header.hd .hd-top .btn-gnb-open::after{left:5px!important;width:22px!important;height:2px!important;border-radius:2px}
 header.hd .hd-top .btn-gnb-open::before{top:9px!important;bottom:auto!important}
@@ -973,7 +973,7 @@ body.v3-dopen .v3-draw{transform:none;visibility:visible}
 .v3-draw .dwsub[hidden]{display:none}
 .v3-draw .dwsub a{padding:9px 0 9px 12px;font-size:13.5px;color:#666}
 .v3-draw .dwline{border:0;border-top:1px solid #E0E0E0;margin:18px 0;opacity:1}
-.v3-draw .dwcs h3{font-size:14px;font-weight:700;margin:0 0 12px}
+.v3-draw .dwcs :is(h3:where(:not([data-oh])),:where([data-oh="3"])){font-size:14px;font-weight:700;margin:0 0 12px}
 .v3-draw .dwtel{margin:0;font-size:17px;font-weight:800;letter-spacing:-.02em}
 .v3-draw .dwhour{margin:3px 0 14px;font-size:12px;color:#999}
 .v3-draw .dwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -1111,7 +1111,7 @@ header.hd .gnb-menu{display:none!important}
 /* 헤더: 992~1279px 노트북에서 메뉴·버튼이 넘치지 않도록 압축 */
 @media(min-width:992px) and (max-width:1279.98px){
 header.hd .hd-top{padding-left:var(--v3-gut)!important;padding-right:var(--v3-gut)!important}
-header.hd .hd-top h1 a{width:150px!important}
+header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a{width:150px!important}
 header.hd .hd-top #gnb>ul>li{margin-left:6px!important}
 header.hd .hd-top #gnb>ul>li>a{font-size:14px!important;padding-left:6px!important;padding-right:6px!important}
 header.hd .hd-top .v3-matjip,header.hd .hd-top .v3-matjip img{height:36px}
@@ -1148,7 +1148,7 @@ footer.ft .support .v4-ft-note{margin-top:10px;max-width:340px;font-size:12px;li
 .thumbnail-swiper:has(.swiperThumbs)>div:last-child{justify-content:flex-start!important}
 .thumbnail-swiper .swiperThumbs{display:block!important}
 .thumbnail-swiper .swiperThumbs .swiper-slide{width:80px!important;height:80px!important;max-width:none!important}}
-/* 버튼 크기 통일: '가입 안내 및 혜택 보기'(btn-lg h5 fw500) 기준 */
+/* 버튼 크기 통일: '가입 안내 및 혜택 보기'(btn-lg :is(h5:where(:not([data-oh])),:where([data-oh="5"])) fw500) 기준 */
 html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x){border-width:1px!important;border-style:solid!important;padding:20px 40px!important;height:auto!important;min-height:0!important;font-size:18px!important;line-height:1.4!important;font-weight:500!important;letter-spacing:-0.04em!important;border-radius:999px!important}
 html body :is(.ct,.sc,.v3-fbar) :is(a.btn-more,a.btn-big-support,a.v3-sbtn,a.v3-w,a.v3-hcard-btn,a.v3-fbar-btn,.mt-3>a.btn.btn-primary):not(#v4x) span{line-height:inherit!important}
 html body .v3-fbar a.v3-fbar-btn:not(#v4x){border-color:transparent!important}
@@ -1220,9 +1220,11 @@ html body .index section.sect2 .sect2-head p.h5.fw400:not(#v4x){margin-bottom:0!
 .v4-tiers{max-width:var(--v3-cw,1200px);margin:0 auto}
 .v4-tiers>.nav-wrap{margin-bottom:32px}
 .v4-tier{background:#fff;border-radius:20px;padding:48px;box-shadow:0 8px 24px rgba(22,48,79,.06)}
-.v4-tier h3{margin-bottom:0!important}
+.v4-tier :is(h3:where(:not([data-oh])),:where([data-oh="3"])){margin-bottom:0!important}
 .v4-tier-d{margin-top:16px;font-size:16px;line-height:1.75;color:#555;word-break:keep-all}
 .v4-tier-list{list-style:none;margin:32px 0 0;padding:28px 0 0;border-top:1px solid #E5ECF5;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 40px}
 .v4-tier-list li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.6;color:#333;word-break:keep-all}
 .v4-tier-list .v4-tn{flex:0 0 auto;min-width:28px;font-weight:700;color:var(--primary)}
 @media(max-width:767.98px){.v4-tier{padding:28px 20px}.v4-tier-list{grid-template-columns:1fr;gap:10px}.v4-tier-list li{font-size:15px}}
+
+/* === v4seo === */

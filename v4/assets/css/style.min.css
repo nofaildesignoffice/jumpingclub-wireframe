@@ -31,7 +31,7 @@ html {
     font-size: 16px;
   }
 }
-body, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label {
+body, p, span, :is(h1:where(:not([data-oh])),:where([data-oh="1"])), :is(h2:where(:not([data-oh])),:where([data-oh="2"])), :is(h3:where(:not([data-oh])),:where([data-oh="3"])), :is(h4:where(:not([data-oh])),:where([data-oh="4"])), :is(h5:where(:not([data-oh])),:where([data-oh="5"])), :is(h6:where(:not([data-oh])),:where([data-oh="6"])), ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label {
   margin: 0;
   padding: 0;
   font-family: "Outfit", "Pretendard", -apple-system, sans-serif;
@@ -113,7 +113,7 @@ button.no-style {
   border: 0;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h5 {
+:is(h1:where(:not([data-oh])),:where([data-oh="1"])), :is(h2:where(:not([data-oh])),:where([data-oh="2"])), :is(h3:where(:not([data-oh])),:where([data-oh="3"])), :is(h4:where(:not([data-oh])),:where([data-oh="4"])), .h1, .h2, .h3, .h4, .h5 {
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 0;
@@ -681,7 +681,7 @@ a.text-primary:active {
 .legacy-intro-circle{
   display:flex; width:100%; position:relative; margin:0 auto; justify-content:space-evenly;
 }
-.legacy-intro h4{
+.legacy-intro :is(h4:where(:not([data-oh])),:where([data-oh="4"])){
   margin-bottom:30px;
 }
 .legacyProcess{
@@ -1359,7 +1359,7 @@ header.hd .hd-top {
   z-index: 999;
   transition: background-color 0.4s;
 }
-header.hd .hd-top h1 a {
+header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a {
   display: block;
   width: 181px;
   height: 49px;
@@ -1430,10 +1430,10 @@ header.hd .hd-top .btn-gnb-open::after {
   header.hd .hd-top {
     padding: 0 20px;
   }
-  header.hd .hd-top h1 {
+  header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) {
     margin-right: auto;
   }
-  header.hd .hd-top h1 a {
+  header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a {
     width: 120px;
     height: 33px;
   }
@@ -1977,7 +1977,7 @@ body.is-scroll header.hd, body.is-scroll header.hd .hd-top, body.search-open hea
   background-color: var(--white);
   transition: background-color 0.4s;
 }
-body.is-scroll header.hd h1 a, body.search-open header.hd h1 a, body.gnb-open header.hd h1 a, body:not(:has(.top-visual)) header.hd h1 a {
+body.is-scroll header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body.search-open header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body.gnb-open header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body:not(:has(.top-visual)) header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a {
   background-image: none;
 }
 body.is-scroll header.hd #gnb a, body.search-open header.hd #gnb a, body.gnb-open header.hd #gnb a, body:not(:has(.top-visual)) header.hd #gnb a {
@@ -2345,18 +2345,18 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.ct .contents h1, .ct .contents h2, .ct .contents h3, .ct .contents h4, .ct .contents h5 {
+.ct .contents :is(h1:where(:not([data-oh])),:where([data-oh="1"])), .ct .contents :is(h2:where(:not([data-oh])),:where([data-oh="2"])), .ct .contents :is(h3:where(:not([data-oh])),:where([data-oh="3"])), .ct .contents :is(h4:where(:not([data-oh])),:where([data-oh="4"])), .ct .contents :is(h5:where(:not([data-oh])),:where([data-oh="5"])) {
   color: var(--dark);
 }
-.ct .contents h3 {
+.ct .contents :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
   margin-bottom: 56px;
 }
-.ct .contents .contain > h3.h2 {
+.ct .contents .contain > :is(h3:where(:not([data-oh])),:where([data-oh="3"])).h2 {
   font-size: 40px !important;
   font-weight: 700 !important;
 }
 @media (max-width: 995.98px) {
-  .ct .contents .contain > h3.h2 {
+  .ct .contents .contain > :is(h3:where(:not([data-oh])),:where([data-oh="3"])).h2 {
     font-size: 36px !important;
   }
 }
@@ -2626,7 +2626,7 @@ body {
   .thumbnail-swiper > div:last-child {
     padding-left: 40px !important;
   }
-  .thumbnail-swiper > div:last-child dl dt h4.h3 {
+  .thumbnail-swiper > div:last-child dl dt :is(h4:where(:not([data-oh])),:where([data-oh="4"])).h3 {
     font-size: 28px !important;
   }
   .thumbnail-swiper > div:last-child dl dd p.h4 {
@@ -3541,7 +3541,7 @@ body {
     margin-bottom: 8px;
   }
 }
-.index section h2.h2 {
+.index section :is(h2:where(:not([data-oh])),:where([data-oh="2"])).h2 {
   font-weight: 800;
   color: var(--dark);
 }
@@ -3847,7 +3847,7 @@ body {
     background: none no-repeat center top/100% auto;
     padding-top: 80px;
   }
-  .index section.sect2 .contents .sect2-head h2 {
+  .index section.sect2 .contents .sect2-head :is(h2:where(:not([data-oh])),:where([data-oh="2"])) {
     margin-bottom: 1rem;
   }
   .index section.sect2 .contents .sect2-head > div:last-child {
@@ -4223,7 +4223,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
-.index section.sect5 .bbs-wrap .bbs-tit h3 {
+.index section.sect5 .bbs-wrap .bbs-tit :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
   font-weight: 800;
 }
 .index section.sect5 .bbs-wrap .bbs-list {
@@ -4482,7 +4482,7 @@ body {
     padding-top: 60px;
     margin-top: 30px;
   }
-  .index .newsletter .contain .text-center h3 {
+  .index .newsletter .contain .text-center :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
     font-size: 56px;
     font-weight: 800;
   }
@@ -4952,7 +4952,7 @@ body {
 .heartheart.manage .ethical section article + article {
   margin-top: 3.5rem;
 }
-.heartheart.manage .ethical section article h5 {
+.heartheart.manage .ethical section article :is(h5:where(:not([data-oh])),:where([data-oh="5"])) {
   margin-bottom: 1.5rem;
   padding: 1rem;
   background-color: var(--bright);
@@ -8792,7 +8792,7 @@ body {
   }
 }
 
-body:has(.en) header.hd .hd-top h1 a {
+body:has(.en) header.hd .hd-top :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a {
   height: 54px;
   background: none no-repeat 0 0/contain;
 }
@@ -8860,7 +8860,7 @@ body:has(.en) header.hd .hd-top .btn-support + .btn-tooltip::after {
     display: block;
   }
 }
-body:has(.en).is-scroll header.hd h1 a, body:has(.en).search-open header.hd h1 a, body:has(.en).gnb-open header.hd h1 a, body:has(.en):not(:has(.top-visual)) header.hd h1 a {
+body:has(.en).is-scroll header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body:has(.en).search-open header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body:has(.en).gnb-open header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a, body:has(.en):not(:has(.top-visual)) header.hd :is(h1:where(:not([data-oh])),:where([data-oh="1"])) a {
   background-image: none;
 }
 @media (min-width: 1250px) {
@@ -9001,12 +9001,12 @@ body:has(.en) .heart.intro .greetings > section:first-child {
   word-break: keep-all;
   text-align: left;
 }
-body:has(.en) .business section .contain h3 {
+body:has(.en) .business section .contain :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
   font-size: 40px !important;
   padding-bottom: 56px;
 }
 @media (max-width: 995.98px) {
-  body:has(.en) .business section .contain h3 {
+  body:has(.en) .business section .contain :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
     font-size: 36px !important;
   }
 }
@@ -9042,7 +9042,7 @@ body:has(.en) .business.domestic .thumbnail-swiper {
   border-bottom: 0;
   padding-bottom: 0;
 }
-body:has(.en) .business.oversea section:last-child h3 {
+body:has(.en) .business.oversea section:last-child :is(h3:where(:not([data-oh])),:where([data-oh="3"])) {
   padding-bottom: 40px;
 }
 body:has(.en) .business.oversea section:last-child .box {
@@ -9064,7 +9064,7 @@ body:has(.en) .business.anc .vision-wrap {
     font-size: 18px;
   }
 }
-body:has(.en) .business.anc h4 + h5.text-gray {
+body:has(.en) .business.anc :is(h4:where(:not([data-oh])),:where([data-oh="4"])) + :is(h5:where(:not([data-oh])),:where([data-oh="5"])).text-gray {
   line-height: 1.5;
 }
 body:has(.en) .business.anc .planning-and-activities .contain > div + div {
